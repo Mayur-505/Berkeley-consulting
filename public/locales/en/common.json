@@ -1,0 +1,268 @@
+{
+  "navBar": {
+    "title1": "Solutions",
+    "title2": "Process",
+    "title3": "Portfolio",
+    "title4": "FAQs",
+    "title5": "Blog"
+  },
+  "landingPage": {
+    "title1": "The A to Z of",
+    "title2": "IT Development",
+    "subTitle": "Experience a reasonable IT project with our global development team.",
+    "button": "Get a Quote",
+    "whyChoose": {
+      "mainTitle": "Why Choosing an",
+      "title": "Outsourcer is Hard",
+      "option1": "“I'm not satisfied with the quality for the price quoted.”",
+      "option2": "“The extra costs keep piling up, and the maintenance is a mess.”",
+      "option3": "“I don't know where to start asking for it.”",
+      "option4": "“I can't communicate well with my development outsourcer.”"
+    },
+    "solution1": {
+      "title": "Technology or process issues",
+      "subTitle": "#1 Solution",
+      "text1": "Fast, friendly feedback from outsourcers",
+      "text2": "Deliver differentiated services that drive 100% customer satisfaction"
+    },
+    "solution2": {
+      "title": "Problems with communication or feedback",
+      "subTitle": "#2 Solution",
+      "text1": "Unlimited design revisions and work/cost splitting",
+      "text2": "Low monthly consulting fees and action plans to make anything happen"
+    },
+    "anythingWant": {
+      "mainTitle": "Anything you want",
+      "title": " Customizable digital solutions",
+      "card1": {
+        "title": "Planning",
+        "text": "Starting with business model design and analysis, we provide a solid plan that \nreflects your needs."
+      },
+      "card2": {
+        "title": "Design",
+        "text": "With 8 years of IT business know-how, we design with partners around the world\n, providing unlimited design revisions and work planning/cost sharing services."
+      },
+      "card3": {
+        "title": "Development",
+        "text": "We work with global development teams across the globe  design/development\n with a global team of developers distributed around the world to provide the\n most optimized optimized development services."
+      },
+      "text1": "Structured, optimized IT development services",
+      "text2": "We do business together, not development."
+    },
+    "developmentCost": {
+      "mainTitle": "Lorem ipsum dolor sit amet,",
+      "title": "1/2 Development Estimated Cost",
+      "subTitle": "Less costly, Raise your development skills",
+      "text1": {
+        "subText1": "Professionals earn an average annual salary of ",
+        "subText2": "$35,000",
+        "subText3": "4 people to create 1 service"
+      },
+      "text2": {
+        "subText1": "Reduce development costs by ",
+        "subText2": "1/2",
+        "subText3": "with a global development team"
+      }
+    },
+    "wage": "wage",
+    "infra": "Infra",
+    "save": "Save 50%",
+    "team": "Global Team",
+    "techStack": {
+      "mainTitle": "Lorem ipsum dolor sit amet",
+      "title": "B.C.'s tech stack",
+      "card1": {
+        "title1": "10 years of experience",
+        "title2": "in furniture business",
+        "text": "We’re already established since 2012, and in 10 years we have lots of positive\n reviews and achievements"
+      },
+      "card2": {
+        "title1": "Afforable price with",
+        "title2": "world class quality",
+        "text": "Our craftsmen have lots of experience dealing with crafting furnitures and some \nof them have world class quality"
+      },
+      "card3": {
+        "title1": "Bring your ideas into",
+        "title2": "a living product",
+        "text": "Besides you can buy the existing product, you can also consultate with us also \nto make your dream furniture"
+      },
+      "card4": {
+        "title1": "10 years of experience",
+        "title2": "in furniture business",
+        "text": "We’re already established since 2012, and in 10 years we have lots of positive \nreviews and achievements"
+      },
+      "card5": {
+        "title1": "Afforable price with",
+        "title2": "world class quality",
+        "text": "Our craftsmen have lots of experience dealing with crafting furnitures and some \nof them have world class quality"
+      },
+      "card6": {
+        "title1": "Bring your ideas into",
+        "title2": "a living product",
+        "text": "Besides you can buy the existing product, you can also consultate with us also \nto make your dream furniture"
+      }
+    },
+    "devProcess": {
+      "mainTitle": "Lorem ipsum dolor sit amet",
+      "title": "Structured development process",
+      "card1": {
+        "title": "Consulting",
+        "text1": "Service Plans",
+        "text2": "Wireframes",
+        "text3": "Prototypes",
+        "text4": "Business analysis",
+        "text5": "Development estimate reports"
+      },
+      "card2": {
+        "title": "Matching",
+        "text1": "Match developers in n days on average",
+        "text2": "Internal QC/QC testing",
+        "text3": "Uniform code rules/development culture",
+        "text4": "Global developer pool"
+      },
+      "card3": {
+        "title": "Development",
+        "text1": "Providing a Development Timeline",
+        "text2": "Real-Time Tracking",
+        "text3": "QC/QA",
+        "text4": "UAT scenarios"
+      },
+      "card4": {
+        "title": "Maintenance",
+        "text1": "Handoffs",
+        "text2": "Continuous feedback",
+        "text3": "Providing maintenance documentation",
+        "text4": "Defective repairs",
+        "text5": "Scaling server infrastructure"
+      }
+    },
+    "reviews": {
+      "title": "Verified customer reviews"
+    },
+    "review1": {
+      "userName": "Savannah Nguyen",
+      "role": "CEO Sans Brothers",
+      "text": "I was worried about the high cost of outsourcing development, but I was able to solve it through satisfactory planning and continuous feedback at a reasonable estimate."
+    },
+    "review2": {
+      "userName": "Eleanor Pena",
+      "role": "CEO Sans Brothers",
+      "text": "Working with Berkeley Consulting's development/design team, it was smooth sailing as we were able to get our ongoing additions and change requests done in a timely manner."
+    },
+    "review3": {
+      "userName": "Zhafira Azalea",
+      "role": "CEO Sans Brothers",
+      "text": "They shared accurate estimates and schedules, so I felt confident in their maintenance."
+    },
+    "review4": {
+      "userName": "Ronald Richards",
+      "role": "CEO Sans Brothers",
+      "text": "During the project with VERCON, I was most satisfied with the consultation and feedback on the estimate and development schedule."
+    },
+    "review5": {
+      "userName": "Rakabuming Suhu",
+      "role": "CEO Sans Brothers",
+      "text": "In addition to the global development team, there was a large pool of partners, and we were able to save a lot of money overall because we were working in English from the beginning."
+    },
+    "review6": {
+      "userName": "Jerome Bell",
+      "role": "CEO Sans Brothers",
+      "text": "I was worried that it would be difficult to communicate with the outsourced developer due to my lack of development knowledge, but the communication was seamless and the launch was flawless."
+    },
+    "review7": {
+      "userName": "Jammy Jems",
+      "role": "CEO Sans Brothers",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    },
+    "review8": {
+      "userName": "Richard fackles",
+      "role": "CEO Sans Brothers",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    },
+    "review9": {
+      "userName": "Katherine fernadence",
+      "role": "CEO Sans Brothers",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    },
+    "review10": {
+      "userName": "Garry Lu",
+      "role": "CEO Sans Brothers",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    },
+    "portfolio": {
+      "title": "Our Portfolio"
+    },
+    "clients": {
+      "count": "40+",
+      "text": "Happy Clients"
+    },
+    "projects": {
+      "count": "540+",
+      "text": "Projects Completed"
+    },
+    "members": {
+      "count": "20",
+      "text": "Dedicated Members"
+    },
+    "faq": {
+      "mainTitle": "Have any questions? Get in Touch",
+      "title": "Frequently asked questions"
+    },
+    "faq1": {
+      "question": "1. I'd like an estimate of the cost.",
+      "answer": "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible."
+    },
+    "faq2": {
+      "question": "2. How does the contract process work?",
+      "answer": ", personalized 30-minute onboarding call to get you up and running as soon as possible."
+    },
+    "faq3": {
+      "question": "3. How does maintenance work?",
+      "answer": "Yes, you can try us for free for 30 days."
+    },
+    "faq4": {
+      "question": "4. I need to proceed with a limited budget, is it possible?",
+      "answer": ", personalized 30-minute onboarding call to get you up and running as soon as possible."
+    },
+    "faq5": {
+      "question": "5. I would like to talk to you in more detail.",
+      "answer": "Yes, you can try us for free for 30 days."
+    }
+  },
+  "footer": {
+    "banner": {
+      "title": "Ready to collaborate?",
+      "text": "Start your business with us! ",
+      "button": "Get a Quote"
+    },
+    "text": "Live up your life!, While knowing that your loved ones and you are protected by us.",
+    "company": {
+      "title": "Company",
+      "text1": "About",
+      "text2": "Careers",
+      "text3": "Our Blog",
+      "text4": "Contact Us"
+    },
+    "service": {
+      "title": "Services",
+      "text1": "Integration",
+      "text2": "Customers",
+      "text3": "Pricing",
+      "text4": "Help Center"
+    },
+    "support": {
+      "title": "Support",
+      "text1": "Terms of Use",
+      "text2": "Privacy Policy",
+      "text3": "Cookie Policy",
+      "text4": "Site Map"
+    },
+    "help": {
+      "title": "Help Center",
+      "text1": "Community",
+      "text2": "Knowledge Base",
+      "text3": "Academy",
+      "text4": "Support"
+    }
+  }
+}

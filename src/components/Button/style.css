@@ -1,0 +1,106 @@
+.button {
+  align-items: center;
+  display: inline-flex;
+  position: relative;
+}
+
+.button .property-2-search {
+  height: 24px !important;
+  position: relative !important;
+  width: 24px !important;
+}
+
+.button .get-started {
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.button.outline {
+  border: 1px solid;
+  border-color: var(--primary-500);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.button.big-OFF {
+  gap: 12px;
+  padding: 10px 30px;
+}
+
+.button.big-ON {
+  padding: 16px 30px;
+}
+
+.button.primary {
+  border-radius: 54px;
+  overflow: hidden;
+}
+
+.button.secondary {
+  gap: 12px;
+}
+
+.button.big-ON.primary {
+  background-color: var(--primarypurple-05);
+  gap: 14px;
+}
+
+.button.outline.big-OFF {
+  justify-content: center;
+}
+
+.button.outline.big-ON {
+  gap: 14px;
+}
+
+.button.primary.big-OFF {
+  background-color: var(--primary600-f);
+}
+
+.button.outline .get-started {
+  color: var(--dark-100);
+  font-family: var(--16-button-2-semibold-font-family);
+  font-size: var(--16-button-2-semibold-font-size);
+  font-style: var(--16-button-2-semibold-font-style);
+  font-weight: var(--16-button-2-semibold-font-weight);
+  letter-spacing: var(--16-button-2-semibold-letter-spacing);
+  line-height: var(--16-button-2-semibold-line-height);
+}
+
+.button.big-OFF .get-started {
+  font-family: var(--16-button-2-semibold-font-family);
+  font-size: var(--16-button-2-semibold-font-size);
+  font-style: var(--16-button-2-semibold-font-style);
+  font-weight: var(--16-button-2-semibold-font-weight);
+  letter-spacing: var(--16-button-2-semibold-letter-spacing);
+  line-height: var(--16-button-2-semibold-line-height);
+}
+
+.button.primary .get-started {
+  color: var(--shadeswhite-shadeswhite-100);
+}
+
+.button.secondary .get-started {
+  color: var(--dark-100);
+}
+
+.button.big-ON.primary .get-started {
+  font-family: var(--18-button-1-semibold-font-family);
+  font-size: var(--18-button-1-semibold-font-size);
+  font-style: var(--18-button-1-semibold-font-style);
+  font-weight: var(--18-button-1-semibold-font-weight);
+  letter-spacing: var(--18-button-1-semibold-letter-spacing);
+  line-height: var(--18-button-1-semibold-line-height);
+}
+
+.button.secondary.big-ON .get-started {
+  font-family: var(--18-button-1-semibold-font-family);
+  font-size: var(--18-button-1-semibold-font-size);
+  font-style: var(--18-button-1-semibold-font-style);
+  font-weight: var(--18-button-1-semibold-font-weight);
+  letter-spacing: var(--18-button-1-semibold-letter-spacing);
+  line-height: var(--18-button-1-semibold-line-height);
+}

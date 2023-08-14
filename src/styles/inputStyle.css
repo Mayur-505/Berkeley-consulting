@@ -1,0 +1,353 @@
+.input-box {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: 500px;
+}
+
+.input-box .heading {
+  align-self: stretch;
+  position: relative;
+}
+
+.input-box .text-wrapper {
+  color: var(--dark-100);
+  font-family: var(--16-body-4-medium-font-family);
+  font-size: var(--16-body-4-medium-font-size);
+  font-style: var(--16-body-4-medium-font-style);
+  font-weight: var(--16-body-4-medium-font-weight);
+  letter-spacing: var(--16-body-4-medium-letter-spacing);
+  line-height: var(--16-body-4-medium-line-height);
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.input-box .auto-layout-vertical {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.input-box .search-bar {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  position: relative;
+  width: auto;
+}
+
+.input-box .icon {
+  height: 24px !important;
+  position: relative !important;
+  width: 24px !important;
+}
+
+.input-box .icon-3 {
+  height: 20px !important;
+  position: relative !important;
+  width: 20px !important;
+}
+
+.input-box .search {
+  flex: 1;
+  margin-top: -0.75px;
+  position: relative;
+}
+
+.input-box .auto-layout {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.input-box .div {
+  flex: 1;
+  margin-top: -1px;
+  position: relative;
+}
+
+.input-box .element {
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.input-box.default.ON {
+  height: 104px;
+}
+
+.input-box.active {
+  height: 104px !important;
+}
+
+.input-box.OFF .heading {
+  margin-top: -1px;
+}
+
+.input-box.dark .heading {
+  color: var(--shadeswhite-shadeswhite-100);
+  font-family: var(--input-text-medium-18px-font-family);
+  font-size: var(--input-text-medium-18px-font-size);
+  font-style: var(--input-text-medium-18px-font-style);
+  font-weight: var(--input-text-medium-18px-font-weight);
+  letter-spacing: var(--input-text-medium-18px-letter-spacing);
+  line-height: var(--input-text-medium-18px-line-height);
+}
+
+.input-box.ON .heading {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  width: 100%;
+}
+
+.input-box.OFF.default .heading {
+  color: var(--gray-900);
+  font-family: var(--18-input-heading-medium-font-family);
+  font-size: var(--18-input-heading-medium-font-size);
+  font-style: var(--18-input-heading-medium-font-style);
+  font-weight: var(--18-input-heading-medium-font-weight);
+  letter-spacing: var(--18-input-heading-medium-letter-spacing);
+  line-height: var(--18-input-heading-medium-line-height);
+}
+
+.input-box.OFF.active .heading {
+  color: var(--gray-900);
+  font-family: var(--18-body-3-medium-font-family);
+  font-size: var(--18-body-3-medium-font-size);
+  font-style: var(--18-body-3-medium-font-style);
+  font-weight: var(--18-body-3-medium-font-weight);
+  letter-spacing: var(--18-body-3-medium-letter-spacing);
+  line-height: var(--18-body-3-medium-line-height);
+}
+
+.input-box.active .auto-layout-vertical {
+  flex: 0 0 auto;
+}
+
+.input-box.dark .auto-layout-vertical {
+  flex: 0 0 auto;
+}
+
+.input-box.error .auto-layout-vertical {
+  flex: 0 0 auto;
+}
+
+.input-box.edit .auto-layout-vertical {
+  flex: 0 0 auto;
+}
+
+.input-box.OFF.default .auto-layout-vertical {
+  height: 88px;
+}
+
+.input-box.default.ON .auto-layout-vertical {
+  flex: 1;
+  flex-grow: 1;
+}
+
+.input-box.default .search-bar {
+  background-color: var(--shadeswhite-shadeswhite-100);
+  border: 1.5px solid;
+  border-color: var(--gray-200);
+  flex: 1;
+  flex-grow: 1;
+  margin-left: -0.75px;
+  margin-right: -0.75px;
+  margin-top: -0.75px;
+}
+
+.input-box.active .search-bar {
+  background-color: var(--shadeswhite-shadeswhite-100);
+  border: 1.5px solid;
+  margin-left: -0.75px;
+  margin-right: -0.75px;
+  margin-top: -0.75px;
+}
+
+.input-box.OFF .search-bar {
+  border-radius: 4px;
+  gap: 16px;
+  padding: 16px;
+}
+
+.input-box.dark .search-bar {
+  background-color: var(--dark-80);
+  border-color: var(--gray-200);
+  flex: 0 0 auto;
+}
+
+.input-box.ON .search-bar {
+  border-radius: 8px;
+  gap: 8px;
+  padding: 10px 16px;
+}
+
+.input-box.error .search-bar {
+  background-color: var(--shadeswhite-shadeswhite-100);
+  border: 1.5px solid;
+  border-color: var(--red-600);
+  height: 43.5px;
+  margin-left: -0.75px;
+  margin-right: -0.75px;
+  margin-top: -0.75px;
+}
+
+.input-box.edit .search-bar {
+  background-color: var(--shadeswhite-shadeswhite-100);
+  border: 1.5px solid;
+  border-color: var(--gray-200);
+  flex: 0 0 auto;
+  margin-left: -0.75px;
+  margin-right: -0.75px;
+  margin-top: -0.75px;
+}
+
+.input-box.active.ON .search-bar {
+  border-color: var(--primary600-f);
+  height: 43.5px;
+}
+
+.input-box.OFF.active .search-bar {
+  border-color: var(--primary-500);
+  flex: 0 0 auto;
+}
+
+.input-box.OFF .search {
+  font-family: var(--body-text-b4-regular-16px-font-family);
+  font-size: var(--body-text-b4-regular-16px-font-size);
+  font-style: var(--body-text-b4-regular-16px-font-style);
+  font-weight: var(--body-text-b4-regular-16px-font-weight);
+  letter-spacing: var(--body-text-b4-regular-16px-letter-spacing);
+  line-height: var(--body-text-b4-regular-16px-line-height);
+}
+
+.input-box.dark .search {
+  color: var(--dark-0);
+}
+
+.input-box.ON .search {
+  font-family: var(--body-text-b5-regular-14px-font-family);
+  font-size: var(--body-text-b5-regular-14px-font-size);
+  font-style: var(--body-text-b5-regular-14px-font-style);
+  font-weight: var(--body-text-b5-regular-14px-font-weight);
+  letter-spacing: var(--body-text-b5-regular-14px-letter-spacing);
+  line-height: var(--body-text-b5-regular-14px-line-height);
+}
+
+.input-box.error .search {
+  color: var(--red-600);
+}
+
+.input-box.edit .search {
+  color: var(--dark-100);
+  height: 22px;
+  white-space: nowrap;
+}
+
+.input-box.OFF.default .search {
+  color: var(--gray-500);
+}
+
+.input-box.active.ON .search {
+  color: var(--gray-500);
+}
+
+.input-box.OFF.active .search {
+  color: var(--dark-100);
+}
+
+.input-box.default.ON .search {
+  color: var(--gray-400);
+}
+
+.input-box.default .div {
+  color: var(--dark-100);
+}
+
+.input-box.active .div {
+  color: var(--dark-100);
+}
+
+.input-box.OFF .div {
+  font-family: var(--button-text-bu2-regular-16px-font-family);
+  font-size: var(--button-text-bu2-regular-16px-font-size);
+  font-style: var(--button-text-bu2-regular-16px-font-style);
+  font-weight: var(--button-text-bu2-regular-16px-font-weight);
+  letter-spacing: var(--button-text-bu2-regular-16px-letter-spacing);
+  line-height: var(--button-text-bu2-regular-16px-line-height);
+}
+
+.input-box.dark .div {
+  color: var(--shadeswhite-shadeswhite-100);
+}
+
+.input-box.ON .div {
+  font-family: var(--body-text-b5-regular-14px-font-family);
+  font-size: var(--body-text-b5-regular-14px-font-size);
+  font-style: var(--body-text-b5-regular-14px-font-style);
+  font-weight: var(--body-text-b5-regular-14px-font-weight);
+  letter-spacing: var(--body-text-b5-regular-14px-letter-spacing);
+  line-height: var(--body-text-b5-regular-14px-line-height);
+}
+
+.input-box.error .div {
+  color: var(--red700-f);
+}
+
+.input-box.edit .div {
+  color: var(--dark-100);
+}
+
+.input-box.default .element {
+  color: var(--dark-100);
+}
+
+.input-box.active .element {
+  color: var(--dark-100);
+}
+
+.input-box.OFF .element {
+  font-family: var(--button-text-bu2-regular-16px-font-family);
+  font-size: var(--button-text-bu2-regular-16px-font-size);
+  font-style: var(--button-text-bu2-regular-16px-font-style);
+  font-weight: var(--button-text-bu2-regular-16px-font-weight);
+  letter-spacing: var(--button-text-bu2-regular-16px-letter-spacing);
+  line-height: var(--button-text-bu2-regular-16px-line-height);
+}
+
+.input-box.dark .element {
+  color: var(--shadeswhite-shadeswhite-100);
+}
+
+.input-box.ON .element {
+  font-family: var(--body-text-b5-regular-14px-font-family);
+  font-size: var(--body-text-b5-regular-14px-font-size);
+  font-style: var(--body-text-b5-regular-14px-font-style);
+  font-weight: var(--body-text-b5-regular-14px-font-weight);
+  letter-spacing: var(--body-text-b5-regular-14px-letter-spacing);
+  line-height: var(--body-text-b5-regular-14px-line-height);
+}
+
+.input-box.error .element {
+  color: var(--red700-f);
+}
+
+.input-box.edit .element {
+  color: var(--dark-100);
+}

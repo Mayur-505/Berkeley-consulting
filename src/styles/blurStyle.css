@@ -1,0 +1,35 @@
+.blur-layer {
+  background-color: #ffffff24;
+  border: 1px none;
+  width: 1280px;
+}
+
+.blur-layer::-webkit-scrollbar{
+  display: none;
+}
+
+.blur-layer .form-instance {
+  left: 50% !important;
+  transform: translate(-50%,0) !important;
+  top: 0 !important;
+}
+
+.blur-layer .arrow-1 {
+  height: 24px !important;
+  position: relative !important;
+  width: 24px !important;
+}
+
+
+.backdrop{
+  filter: blur(8px);
+        -webkit-filter: blur(8px);
+        
+        /* Full height */
+        height: 100%; 
+        
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}

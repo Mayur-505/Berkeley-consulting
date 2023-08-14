@@ -1,0 +1,48 @@
+/*
+We're constantly improving the code you see. 
+Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
+*/
+
+import PropTypes from "prop-types";
+import React from "react";
+
+interface Props {
+  color: string;
+  className: any;
+}
+
+export const Property2Search = ({ color = "#15141E", className }: Props): JSX.Element => {
+  return (
+    <svg
+      className={`property-2-search ${className}`}
+      fill="none"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        className="circle"
+        cx="11.7669"
+        cy="11.7659"
+        r="8.98856"
+        stroke={color}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+      />
+      <path
+        className="path"
+        d="M18.0186 18.4844L21.5426 21.9992"
+        stroke={color}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+      />
+    </svg>
+  );
+};
+
+Property2Search.propTypes = {
+  color: PropTypes.string,
+};

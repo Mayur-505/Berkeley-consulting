@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=General+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --10-body-2-bold-font-family: "GeneralSans-Bold", Helvetica;
+  --10-body-2-bold-font-size: 10px;
+  --10-body-2-bold-font-style: normal;
+  --10-body-2-bold-font-weight: 700;
+  --10-body-2-bold-letter-spacing: 0.15px;
+  --10-body-2-bold-line-height: 14px;
+  --10-body-2-medium-font-family: "GeneralSans-Medium", Helvetica;
+  --10-body-2-medium-font-size: 10px;
+  --10-body-2-medium-font-style: normal;
+  --10-body-2-medium-font-weight: 500;
+  --10-body-2-medium-letter-spacing: 0.15px;
+  --10-body-2-medium-line-height: 14px;
+  --10-body-2-regular-font-family: "GeneralSans-Regular", Helvetica;
+  --10-body-2-regular-font-size: 10px;
+  --10-body-2-regular-font-style: normal;
+  --10-body-2-regular-font-weight: 400;
+  --10-body-2-regular-letter-spacing: 0.15px;
+  --10-body-2-regular-line-height: 14px;
+  --12-body-1-bold-font-family: "GeneralSans-Bold", Helvetica;
+  --12-body-1-bold-font-size: 12px;
+  --12-body-1-bold-font-style: normal;
+  --12-body-1-bold-font-weight: 700;
+  --12-body-1-bold-letter-spacing: 0.18px;
+  --12-body-1-bold-line-height: 16px;
+  --12-body-1-medium-font-family: "GeneralSans-Medium", Helvetica;
+  --12-body-1-medium-font-size: 12px;
+  --12-body-1-medium-font-style: normal;
+  --12-body-1-medium-font-weight: 500;
+  --12-body-1-medium-letter-spacing: 0.18px;
+  --12-body-1-medium-line-height: 16px;
+  --12-body-1-regular-font-family: "GeneralSans-Regular", Helvetica;
+  --12-body-1-regular-font-size: 12px;
+  --12-body-1-regular-font-style: normal;
+  --12-body-1-regular-font-weight: 400;
+  --12-body-1-regular-letter-spacing: 0.18px;
+  --12-body-1-regular-line-height: 16px;
+  --16-body-4-bold-font-family: "GeneralSans-Bold", Helvetica;
+  --16-body-4-bold-font-size: 16px;
+  --16-body-4-bold-font-style: normal;
+  --16-body-4-bold-font-weight: 700;
+  --16-body-4-bold-letter-spacing: 0.24px;
+  --16-body-4-bold-line-height: 24px;
+  --16-body-4-medium-font-family: "GeneralSans-Medium", Helvetica;
+  --16-body-4-medium-font-size: 16px;
+  --16-body-4-medium-font-style: normal;
+  --16-body-4-medium-font-weight: 500;
+  --16-body-4-medium-letter-spacing: 0px;
+  --16-body-4-medium-line-height: 24px;
+  --16-body-4-regular-font-family: "GeneralSans-Regular", Helvetica;
+  --16-body-4-regular-font-size: 16px;
+  --16-body-4-regular-font-style: normal;
+  --16-body-4-regular-font-weight: 400;
+  --16-body-4-regular-letter-spacing: 0px;
+  --16-body-4-regular-line-height: 24px;
+  --16-button-2-medium-font-family: "GeneralSans-Regular", Helvetica;
+  --16-button-2-medium-font-size: 16px;
+  --16-button-2-medium-font-style: normal;
+  --16-button-2-medium-font-weight: 400;
+  --16-button-2-medium-letter-spacing: 0.24px;
+  --16-button-2-medium-line-height: 24px;
+  --16-button-2-semibold-font-family: "GeneralSans-Medium", Helvetica;
+  --16-button-2-semibold-font-size: 16px;
+  --16-button-2-semibold-font-style: normal;
+  --16-button-2-semibold-font-weight: 500;
+  --16-button-2-semibold-letter-spacing: 0.24px;
+  --16-button-2-semibold-line-height: 24px;
+  --18-body-3-bold-font-family: "GeneralSans-Bold", Helvetica;
+  --18-body-3-bold-font-size: 18px;
+  --18-body-3-bold-font-style: normal;
+  --18-body-3-bold-font-weight: 700;
+  --18-body-3-bold-letter-spacing: 0.27px;
+  --18-body-3-bold-line-height: 24px;
+  --18-body-3-medium-font-family: "GeneralSans-Medium", Helvetica;
+  --18-body-3-medium-font-size: 18px;
+  --18-body-3-medium-font-style: normal;
+  --18-body-3-medium-font-weight: 500;
+  --18-body-3-medium-letter-spacing: 0.72px;
+  --18-body-3-medium-line-height: 28px;
+  --18-body-3-regular-font-family: "GeneralSans-Regular", Helvetica;
+  --18-body-3-regular-font-size: 18px;
+  --18-body-3-regular-font-style: normal;
+  --18-body-3-regular-font-weight: 400;
+  --18-body-3-regular-letter-spacing: 0.27px;
+  --18-body-3-regular-line-height: 24px;
+  --18-button-1-medium-font-family: "GeneralSans-Regular", Helvetica;
+  --18-button-1-medium-font-size: 18px;
+  --18-button-1-medium-font-style: normal;
+  --18-button-1-medium-font-weight: 400;
+  --18-button-1-medium-letter-spacing: 0.27px;
+  --18-button-1-medium-line-height: 24px;
+  --18-button-1-semibold-font-family: "GeneralSans-Medium", Helvetica;
+  --18-button-1-semibold-font-size: 18px;
+  --18-button-1-semibold-font-style: normal;
+  --18-button-1-semibold-font-weight: 500;
+  --18-button-1-semibold-letter-spacing: 0.27px;
+  --18-button-1-semibold-line-height: 24px;
+  --18-input-heading-medium-font-family: "GeneralSans-Medium", Helvetica;
+  --18-input-heading-medium-font-size: 18px;
+  --18-input-heading-medium-font-style: normal;
+  --18-input-heading-medium-font-weight: 500;
+  --18-input-heading-medium-letter-spacing: 0px;
+  --18-input-heading-medium-line-height: 24px;
+  --18-input-text-regular-font-family: "Inter-Regular", Helvetica;
+  --18-input-text-regular-font-size: 18px;
+  --18-input-text-regular-font-style: normal;
+  --18-input-text-regular-font-weight: 400;
+  --18-input-text-regular-letter-spacing: 0px;
+  --18-input-text-regular-line-height: 24px;
+  --24-body-1-light-font-family: "Satoshi-Regular", Helvetica;
+  --24-body-1-light-font-size: 24px;
+  --24-body-1-light-font-style: normal;
+  --24-body-1-light-font-weight: 400;
+  --24-body-1-light-letter-spacing: 0px;
+  --24-body-1-light-line-height: 32px;
+  --32-heading-6-bold-font-family: "GeneralSans-Bold", Helvetica;
+  --32-heading-6-bold-font-size: 32px;
+  --32-heading-6-bold-font-style: normal;
+  --32-heading-6-bold-font-weight: 700;
+  --32-heading-6-bold-letter-spacing: 0px;
+  --32-heading-6-bold-line-height: 40px;
+  --32-heading-6-medium-font-family: "GeneralSans-Medium", Helvetica;
+  --32-heading-6-medium-font-size: 32px;
+  --32-heading-6-medium-font-style: normal;
+  --32-heading-6-medium-font-weight: 500;
+  --32-heading-6-medium-letter-spacing: 0px;
+  --32-heading-6-medium-line-height: 48px;
+  --32-heading-6-regular-font-family: "GeneralSans-Regular", Helvetica;
+  --32-heading-6-regular-font-size: 32px;
+  --32-heading-6-regular-font-style: normal;
+  --32-heading-6-regular-font-weight: 400;
+  --32-heading-6-regular-letter-spacing: 0px;
+  --32-heading-6-regular-line-height: 40px;
+  --40-heading-5-bold-font-family: "GeneralSans-Bold", Helvetica;
+  --40-heading-5-bold-font-size: 40px;
+  --40-heading-5-bold-font-style: normal;
+  --40-heading-5-bold-font-weight: 700;
+  --40-heading-5-bold-letter-spacing: 0px;
+  --40-heading-5-bold-line-height: 48px;
+  --40-heading-5-medium-font-family: "GeneralSans-Medium", Helvetica;
+  --40-heading-5-medium-font-size: 40px;
+  --40-heading-5-medium-font-style: normal;
+  --40-heading-5-medium-font-weight: 500;
+  --40-heading-5-medium-letter-spacing: 0px;
+  --40-heading-5-medium-line-height: 48px;
+  --40-heading-5-regular-font-family: "GeneralSans-Regular", Helvetica;
+  --40-heading-5-regular-font-size: 40px;
+  --40-heading-5-regular-font-style: normal;
+  --40-heading-5-regular-font-weight: 400;
+  --40-heading-5-regular-letter-spacing: 0px;
+  --40-heading-5-regular-line-height: 48px;
+  --48-heading-4-bold-font-family: "GeneralSans-Bold", Helvetica;
+  --48-heading-4-bold-font-size: 48px;
+  --48-heading-4-bold-font-style: normal;
+  --48-heading-4-bold-font-weight: 700;
+  --48-heading-4-bold-letter-spacing: 0px;
+  --48-heading-4-bold-line-height: 56px;
+  --48-heading-4-medium-font-family: "GeneralSans-Medium", Helvetica;
+  --48-heading-4-medium-font-size: 48px;
+  --48-heading-4-medium-font-style: normal;
+  --48-heading-4-medium-font-weight: 500;
+  --48-heading-4-medium-letter-spacing: 0px;
+  --48-heading-4-medium-line-height: 56px;
+  --48-heading-4-regular-font-family: "GeneralSans-Regular", Helvetica;
+  --48-heading-4-regular-font-size: 48px;
+  --48-heading-4-regular-font-style: normal;
+  --48-heading-4-regular-font-weight: 400;
+  --48-heading-4-regular-letter-spacing: 0px;
+  --48-heading-4-regular-line-height: 56px;
+  --56-heading-3-bold-font-family: "GeneralSans-Bold", Helvetica;
+  --56-heading-3-bold-font-size: 56px;
+  --56-heading-3-bold-font-style: normal;
+  --56-heading-3-bold-font-weight: 700;
+  --56-heading-3-bold-letter-spacing: 0px;
+  --56-heading-3-bold-line-height: 64px;
+  --56-heading-3-medium-font-family: "PlusJakarta Sans-Medium", Helvetica;
+  --56-heading-3-medium-font-size: 56px;
+  --56-heading-3-medium-font-style: normal;
+  --56-heading-3-medium-font-weight: 500;
+  --56-heading-3-medium-letter-spacing: 0px;
+  --56-heading-3-medium-line-height: 64px;
+  --56-heading-3-regular-font-family: "GeneralSans-Regular", Helvetica;
+  --56-heading-3-regular-font-size: 56px;
+  --56-heading-3-regular-font-style: normal;
+  --56-heading-3-regular-font-weight: 400;
+  --56-heading-3-regular-letter-spacing: 0px;
+  --56-heading-3-regular-line-height: 64px;
+  --64-heading-2-bold-font-family: "GeneralSans-Bold", Helvetica;
+  --64-heading-2-bold-font-size: 64px;
+  --64-heading-2-bold-font-style: normal;
+  --64-heading-2-bold-font-weight: 700;
+  --64-heading-2-bold-letter-spacing: 0px;
+  --64-heading-2-bold-line-height: 72px;
+  --64-heading-2-medium-font-family: "GeneralSans-Medium", Helvetica;
+  --64-heading-2-medium-font-size: 64px;
+  --64-heading-2-medium-font-style: normal;
+  --64-heading-2-medium-font-weight: 500;
+  --64-heading-2-medium-letter-spacing: 0px;
+  --64-heading-2-medium-line-height: 72px;
+  --64-heading-2-regular-font-family: "GeneralSans-Regular", Helvetica;
+  --64-heading-2-regular-font-size: 64px;
+  --64-heading-2-regular-font-style: normal;
+  --64-heading-2-regular-font-weight: 400;
+  --64-heading-2-regular-letter-spacing: 0px;
+  --64-heading-2-regular-line-height: 72px;
+  --72-heading-1-bold-font-family: "GeneralSans-Bold", Helvetica;
+  --72-heading-1-bold-font-size: 72px;
+  --72-heading-1-bold-font-style: normal;
+  --72-heading-1-bold-font-weight: 700;
+  --72-heading-1-bold-letter-spacing: 0px;
+  --72-heading-1-bold-line-height: 88px;
+  --72-heading-1-medium-font-family: "GeneralSans-Medium", Helvetica;
+  --72-heading-1-medium-font-size: 72px;
+  --72-heading-1-medium-font-style: normal;
+  --72-heading-1-medium-font-weight: 500;
+  --72-heading-1-medium-letter-spacing: 0px;
+  --72-heading-1-medium-line-height: 88px;
+  --72-heading-1-regular-font-family: "GeneralSans-Regular", Helvetica;
+  --72-heading-1-regular-font-size: 72px;
+  --72-heading-1-regular-font-style: normal;
+  --72-heading-1-regular-font-weight: 400;
+  --72-heading-1-regular-letter-spacing: 0px;
+  --72-heading-1-regular-line-height: 88px;
+  --72-semi-bold-font-family: "GeneralSans-Semibold", Helvetica;
+  --72-semi-bold-font-size: 72px;
+  --72-semi-bold-font-style: normal;
+  --72-semi-bold-font-weight: 400;
+  --72-semi-bold-letter-spacing: 0px;
+  --72-semi-bold-line-height: 88px;
+  --autolayout-horizontal-stroke: rgba(24, 24, 27, 1);
+  --body-text-b4-regular-16px-font-family: "Satoshi-Regular", Helvetica;
+  --body-text-b4-regular-16px-font-size: 16px;
+  --body-text-b4-regular-16px-font-style: normal;
+  --body-text-b4-regular-16px-font-weight: 400;
+  --body-text-b4-regular-16px-letter-spacing: 0px;
+  --body-text-b4-regular-16px-line-height: 24px;
+  --body-text-b5-regular-14px-font-family: "Satoshi-Regular", Helvetica;
+  --body-text-b5-regular-14px-font-size: 14px;
+  --body-text-b5-regular-14px-font-style: normal;
+  --body-text-b5-regular-14px-font-weight: 400;
+  --body-text-b5-regular-14px-letter-spacing: 0px;
+  --body-text-b5-regular-14px-line-height: 22px;
+  --button-text-bu2-regular-16px-font-family: "Satoshi-Regular", Helvetica;
+  --button-text-bu2-regular-16px-font-size: 16px;
+  --button-text-bu2-regular-16px-font-style: normal;
+  --button-text-bu2-regular-16px-font-weight: 400;
+  --button-text-bu2-regular-16px-letter-spacing: 0.24px;
+  --button-text-bu2-regular-16px-line-height: 24px;
+  --dark-0: rgba(210, 211, 213, 1);
+  --dark-100: rgba(21, 20, 30, 1);
+  --dark-80: rgba(37, 40, 54, 1);
+  --font-showcase-box-stroke: rgba(24, 24, 27, 1);
+  --gray-200: rgba(228, 228, 231, 1);
+  --gray-400: rgba(161, 161, 170, 1);
+  --gray-500: rgba(113, 113, 122, 1);
+  --gray-900: rgba(24, 24, 27, 1);
+  --greysgrey-01: rgba(241, 245, 249, 1);
+  --greysgrey-02: rgba(226, 232, 240, 1);
+  --greysgrey-03: rgba(203, 213, 225, 1);
+  --greysgrey-04: rgba(148, 163, 184, 1);
+  --greysgrey-05: rgba(100, 116, 139, 1);
+  --greysgrey-06: rgba(71, 85, 105, 1);
+  --greysgrey-07: rgba(51, 65, 85, 1);
+  --greysgrey-08: rgba(30, 41, 59, 1);
+  --greysgrey-09: rgba(15, 23, 42, 1);
+  --greysgrey-10: rgba(2, 6, 23, 1);
+  --heading-1-bold-font-family: "GeneralSans-Bold", Helvetica;
+  --heading-1-bold-font-size: 112px;
+  --heading-1-bold-font-style: normal;
+  --heading-1-bold-font-weight: 700;
+  --heading-1-bold-letter-spacing: 0px;
+  --heading-1-bold-line-height: 124px;
+  --heading-1-medium-font-family: "GeneralSans-Medium", Helvetica;
+  --heading-1-medium-font-size: 86px;
+  --heading-1-medium-font-style: normal;
+  --heading-1-medium-font-weight: 500;
+  --heading-1-medium-letter-spacing: 0px;
+  --heading-1-medium-line-height: 94px;
+  --heading-1-regular-font-family: "GeneralSans-Regular", Helvetica;
+  --heading-1-regular-font-size: 94px;
+  --heading-1-regular-font-style: normal;
+  --heading-1-regular-font-weight: 400;
+  --heading-1-regular-letter-spacing: 0px;
+  --heading-1-regular-line-height: 96px;
+  --input-text-medium-18px-font-family: "Satoshi-Medium", Helvetica;
+  --input-text-medium-18px-font-size: 18px;
+  --input-text-medium-18px-font-style: normal;
+  --input-text-medium-18px-font-weight: 500;
+  --input-text-medium-18px-letter-spacing: 0px;
+  --input-text-medium-18px-line-height: 24px;
+  --primary-500: rgba(91, 81, 210, 1);
+  --primary600-f: rgba(68, 59, 176, 1);
+  --primarypurple-01: rgba(219, 234, 254, 1);
+  --primarypurple-02: rgba(191, 219, 254, 1);
+  --primarypurple-03: rgba(147, 197, 253, 1);
+  --primarypurple-04: rgba(96, 165, 250, 1);
+  --primarypurple-05: rgba(59, 130, 246, 1);
+  --primarypurple-06: rgba(37, 99, 235, 1);
+  --primarypurple-07: rgba(29, 78, 216, 1);
+  --primarypurple-08: rgba(30, 64, 175, 1);
+  --primarypurple-09: rgba(30, 58, 138, 1);
+  --primarypurple-10: rgba(23, 37, 84, 1);
+  --red-600: rgba(235, 144, 145, 1);
+  --red700-f: rgba(229, 72, 77, 1);
+  --shadeblack-01: rgba(0, 0, 0, 0.1);
+  --shadeblack-02: rgba(0, 0, 0, 0.2);
+  --shadeblack-03: rgba(0, 0, 0, 0.4);
+  --shadeblack-04: rgba(0, 0, 0, 0.6);
+  --shadeblack-05: rgba(0, 0, 0, 0.8);
+  --shadeblack-06: rgba(18, 18, 18, 1);
+  --shadeswhite-shadeswhite-100: rgba(255, 255, 255, 1);
+  --shadewhite-01: rgba(255, 255, 255, 0.1);
+  --shadewhite-02: rgba(255, 255, 255, 0.2);
+  --shadewhite-03: rgba(255, 255, 255, 0.4);
+  --shadewhite-04: rgba(255, 255, 255, 0.6);
+  --shadewhite-05: rgba(255, 255, 255, 0.8);
+  --shadewhite-06: rgba(255, 255, 255, 1);
+  --shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.21);
+}
+/* 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+    @apply leading-[normal] m-0;
+}
+
+
+.mainPage{
+  transform: translate(-50%, 0%);
+}
+
+
+.container {
+  max-width: 1440px !important;
+}
+
+.slick-dots {
+  display: block !important;
+  position: absolute !important;
+  bottom: -80px !important;
+}
+
+.slick-dots li button:before {
+  content: "" !important;
+}
+
+.slick-dots li {
+  width: 60px !important;
+}
+
+.slick-dots li button {
+  width: 100% !important;
+}
+
+.slick-dots .slick-active button {
+  border-top: 2px solid #333 !important;
+}
+
+.slick-dots li button {
+  border-top: 2px solid #ddd !important;
+}
+
+.slick-arrow.slick-next,
+.slick-next:before {
+  display: none !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none !important;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  display: none !important;
+}
+.ReactModal__Content.ReactModal__Content--after-open {
+  height: 508px;
+}
+
+.ReactModal__Overlay {
+  inset: 0px 0px !important;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1320px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 943px !important;
+  }
+
+  .padding-lr-20 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .pb-100pxm {
+    padding-bottom: 100px !important;
+  }
+
+  .pt-100pxm {
+    padding-top: 100px !important;
+  }
+
+  .pb-0pxm {
+    padding-bottom: 0 !important;
+  }
+
+  .fs-36 {
+    font-size: 36px !important;
+  }
+
+  .fs-14 {
+    font-size: 14px !important;
+  }
+
+  .common-round-icon {
+    display: none;
+  }
+
+  .mx-w-100-sm {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px !important;
+  }
+}
+
+.boxBorder {
+  border-left: 2px solid #000;
+}
+
+.leftOverlay {
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.ReactModal__Content.ReactModal__Content--after-open::-webkit-scrollbar{
+  display: none;
+} 
