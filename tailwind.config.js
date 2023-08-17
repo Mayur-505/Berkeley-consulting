@@ -81,6 +81,13 @@ module.exports = {
       "21xl": "40px",
       "53xl": "72px",
     },
+    fontFamily: {
+      'general-sans': ['"General Sans"', 'sans-serif'],
+      'satoshi': ['Satoshi', 'sans-serif'],
+      'plus-jakarta-sans': ['"Plus Jakarta Sans"', 'sans-serif'],
+      'inter': ['Inter', 'sans-serif'],
+      'dm-sans': ['"DM Sans"', 'sans-serif'],
+    }
   },
   corePlugins: {
     preflight: false,

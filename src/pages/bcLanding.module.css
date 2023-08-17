@@ -1,0 +1,180 @@
+.landingPageWrapper{
+  background-image: url(../../public/pattern.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+}
+.devCostRightConner {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.imgractangle{
+  display: none;
+}
+@media (max-width: 1354px) {
+  .mxW390{
+    max-width: 390px;
+  }
+  .languageTitle1 {
+    left: -40px;
+  }
+  .languageTitle2 {
+    right: -40px;
+  }
+  .languageTitle3 {
+    right: -90px;
+  }
+  .languageTitle4 {
+    left: -90px;
+  }
+}
+@media (max-width: 1182px) {
+  .estimatedcosttable{
+    display: block !important;
+  }
+  .devCostRightConner{
+    position: inherit;
+    transform: translate(0);
+    padding: 0 30px 30px;
+  }
+  .devCostGroup{
+    height: 800px;
+  }
+  .devCostLeftConner {
+    position: absolute;
+    bottom: 0;
+    left: 12%;
+  }
+  .positionInherit {
+    position: inherit;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-bottom: 15px;
+  }
+  .h1140px{
+    height: 1140px;
+  }
+  .outSourcerImg{
+    top: calc(50% - 5px);
+  }
+  .mxW390{
+    max-width: 100%;
+    width: 91%;
+  }
+  .languageTitle1 {
+    left: -60px;
+  }
+  .languageTitle2 {
+    right: -60px;
+  }
+  .languageTitle3 {
+    right: -100px;
+  }
+  .languageTitle4 {
+    left: -100px;
+  }
+}
+@media (max-width: 899px) {
+  .digitalSolutionsdiv1 {
+    height: 383px;
+  }
+  .digitalSolutionsdiv2{
+    height: 469px;
+  }
+  .digitalSolutionsdiv3{
+    height: 357px;
+  }
+  .imgractangle{
+    display: block;
+  }
+  .ractangleSingleimg{
+    display: none;
+  }
+  .servicestext{
+    margin-top: 87px;
+  }
+  .languageTitle1 img, .languageTitle2 img, .languageTitle3 img, .languageTitle4 img{
+    width: 34px;
+    height: 34px;
+  }
+}
+@media (max-width: 699px) {
+  .devCostLeftConner {
+    left: 3%;
+  }
+  .devCostWageTitle{
+    font-size: 29px !important;
+  }
+  .devCostSave{
+    font-size: 23px !important;
+  }
+}
+@media (max-width: 639px) {
+  .pfSlider {
+    margin: 0 50px;
+  }
+  .pfsliderImages{
+    height: 280px;
+  }
+}
+@media (max-width: 599px) {
+  .devCostLeftConner {
+    left: -11%;
+  }
+  .devCostGlobalTeam{
+    left: 290px;
+    width: 145px;
+  }
+  .devCostSave {
+    left: 316px;
+  }
+  .devCostEllipse{
+    left: 198px;
+  }
+  .mxW390{
+    width: 100%;
+  }
+  .mainPage{
+    max-width: 100%;
+    width: 100%;
+  }
+  .languageTitle1 {
+    left: 20px;
+  }
+  .languageTitle2 {
+    right: 20px;
+  }
+  .languageTitle3 {
+    right: 10px;
+  }
+  .languageTitle4 {
+    left: 10px;
+  }
+}
+@media (max-width: 462px) {
+  .devCostLeftConner {
+    left: -16%;
+  }
+  .devCostGlobalTeam {
+    left: 246px;
+    width: 121px;
+  }
+  .devCostSave {
+    left: 265px;
+  }
+  .devCostEllipse {
+    left: 150px;
+  }
+  .devCostWage{
+    padding: 2.75rem 22px 0;
+  }
+  .positionInherit{
+    margin-bottom: -17px;
+  }
+}

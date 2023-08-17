@@ -1,0 +1,34 @@
+.footerMenu{
+  background: var(--greys-grey-09, #0F172A);
+  width: 100%;
+  padding: 200px 0 80px;
+}
+@media (max-width: 991px) {
+  .quoteButton{
+    justify-content: center;
+  }
+  .footerbanner{
+    padding: 24px;
+  }
+  .footerbannerinner{
+    display: block;
+  }
+  .quoteButton{
+    width: fit-content;
+    margin: 24px auto 0;
+  }
+  .footerbanner p{
+    font-size: 24px !important;
+    line-height: 28px;
+  }
+}
+@media (max-width: 899px) {
+  .footerMenu {
+    padding: 150px 0 50px;
+  }
+}
+@media (max-width: 767px) {
+  .footerbanner p{
+    font-size: 18px !important;
+  }
+}
