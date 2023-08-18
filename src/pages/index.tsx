@@ -42,7 +42,6 @@ const settingsPortfolio = {
 };
 
 const reducer = (state: any, action: any) => {
-  console.log("🚀 ~ file: index.tsx:8 ~ reducer ~ action:", action)
   switch (action) {
     case "faq1":
       return {
@@ -974,14 +973,7 @@ const BCLandingPage: NextPage = () => {
   );
 };
 //getServeSideProps wors too
-export const getStaticProps = async ({ locale }: any) => {
-  await i18n?.reloadResources();
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ["common"])),
-    },
-  };
-};
+
 
 // export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
 //   // Fetch and pass translation data as props

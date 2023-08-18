@@ -33,13 +33,13 @@ export default function Document({
         fallbackLng: 'en',
         resources: {
           en: {
-            common: value?.en,
+            translation: value?.en,
           },
           ko: {
-            common: value?.ko,
+            translation: value?.ko,
           },
           chi: {
-            common: value?.chi,
+            translation: value?.chi,
           }
         },
         interpolation: {

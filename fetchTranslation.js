@@ -80,7 +80,7 @@ const write = (data) => {
         const tempObject = Object.expand(data[key]);
         // console.log("🚀 ~ file: fetchTranslation.js:80 ~ Object.keys ~ tempObject:", tempObject)
         fs.writeFile(
-            `./public/locales/${key}/common.json`,
+            `./public/locales/${key}/translation.json`,
             JSON.stringify(tempObject, null, 2),
             (err) => {
                 if (err) {

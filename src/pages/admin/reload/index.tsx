@@ -1,4 +1,5 @@
 "use client"
+import i18nInstance from '@/i18n';
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
@@ -48,7 +49,26 @@ const Index = () => {
             toast("Translation fetched successfully!")
             setLoader(false)
             localStorage.setItem("translation", JSON.stringify(response))
-            window.reload()
+            i18nInstance.init({
+                lng: 'en',
+                fallbackLng: 'en',
+                resources: {
+                    en: {
+                        translation: response?.en,
+                    },
+                    ko: {
+                        translation: response?.ko,
+                    },
+
+                },
+                interpolation: {
+                    escapeValue: false,
+                },
+            });
+            setTimeout(() => {
+
+                typeof window !== undefined && window.reload()
+            }, 1000);
         } catch (err) {
             throw err;
         }
