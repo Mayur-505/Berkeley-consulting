@@ -110,7 +110,7 @@ function FAQComponent() {
   return (
     <>
       {faqArray.map((faq, index) => {
-        return <div key={index} className={`self-stretch flex flex-col items-center justify-start border-solid ${index === faqArray?.length - 1 ? "border-b-0" : "border-b-1"}  border-gray-200 border-r-0 border-l-0 border-t-0`}>
+        return <div key={index} className={`self-stretch flex flex-col items-center justify-start border-solid ${index === faqArray?.length - 1 ? "border-b-0" : "border-b-1"} lg:w-[900px] md:w-[600px] w-full border-gray-200 border-r-0 border-l-0 border-t-0`}>
           <div className="self-stretch flex flex-row items-start justify-start gap-[24px] pb-4">
             <div className="flex flex-col pt-0.5 px-0 pb-0 items-start justify-start">
 
@@ -729,7 +729,7 @@ const BCLandingPage: NextPage = () => {
         </div>
         <div className="container mx-auto flex flex-col py-[100px] items-center justify-start gap-[84px] text-primary-purple-06 text-center">
           <div className="relative flex items-center px-[24px]">
-            <span className="[line-break:anywhere] w-full">
+            <span className="w-full">
               <p className="m-0 leading-[32px] text-[24px] fs-18">{t("landingPage.developmentCost.mainTitle")}</p>
               <p className="m-0 text-29xl leading-[56px] fs-32 text-greys-grey-08">{t("landingPage.developmentCost.title")}</p>
             </span>
@@ -792,7 +792,7 @@ const BCLandingPage: NextPage = () => {
         </div>
         <div className="flex flex-col py-[100px] items-center justify-start gap-[84px] text-primary-purple-06 text-center">
           <div className="relative flex items-center">
-            <span className="[line-break:anywhere] w-full">
+            <span className="w-full">
               <p className="m-0 leading-[32px] text-[24px] fs-18">{t("landingPage.techStack.mainTitle")}</p>
               <p className="m-0 text-29xl leading-[56px] fs-32 font-medium text-greys-grey-08">
                 {t("landingPage.techStack.title")}
@@ -830,7 +830,7 @@ const BCLandingPage: NextPage = () => {
         </div>
         <div className="flex flex-col py-[100px] items-center justify-start gap-[84px] text-primary-purple-06 text-center">
           <div className="relative flex items-center px-[24px]">
-            <span className="[line-break:anywhere] w-full">
+            <span className="w-full">
               <p className="m-0 leading-[32px] text-[24px] fs-18">{t("landingPage.devProcess.mainTitle")}</p>
               <p className="m-0 text-29xl leading-[56px] fs-32 font-medium text-greys-grey-08">
                 {t("landingPage.devProcess.title")}
@@ -974,14 +974,14 @@ const BCLandingPage: NextPage = () => {
   );
 };
 //getServeSideProps wors too
-export const getStaticProps = async ({ locale }: any) => {
-  await i18n?.reloadResources();
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ["common"])),
-    },
-  };
-};
+// export const getStaticProps = async ({ locale }: any) => {
+//   await i18n?.reloadResources();
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(locale, ["common"])),
+//     },
+//   };
+// };
 
 // export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
 //   // Fetch and pass translation data as props

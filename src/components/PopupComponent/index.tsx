@@ -1,6 +1,8 @@
 import React from 'react'
 import Modal from 'react-modal';
 
+Modal.setAppElement('#__next');
+
 const customStyles: any = {
 
     content: {

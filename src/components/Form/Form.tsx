@@ -19,14 +19,14 @@ export const Form = ({ className, buttonIcon = <Arrow1 className="arrow" /> }: P
       <div className="frame">
         <div className="text-wrapper-2">Inquiry</div>
       </div>
-      <p className="please-fill-in-brief">
+      <div className="please-fill-in-brief">
         <span className="span">
           Please fill in brief service information!
           <br />
           It is very helpful for{" "}
         </span>
         <span className="text-wrapper-3 font-medium">quotation consultation.</span>
-      </p>
+      </div>
       <div className="frame-2">
         <InputBox
           className="input-box-instance"

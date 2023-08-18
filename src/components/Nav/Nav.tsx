@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styles from "./nav.module.css";
 import { useRouter } from 'next/router';
-import { Button } from '../Button';
 
 const Nav = () => {
   const { t } = useTranslation()
@@ -75,7 +74,7 @@ const Nav = () => {
                 type="button"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="15" viewBox="0 0 29 15" fill="none">
-                  <path d="M1 1H28M1 13.5H28" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
+                  <path d="M1 1H28M1 13.5H28" stroke="black" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" />
                 </svg>
               </button>
             </div>
