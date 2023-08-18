@@ -25,12 +25,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [language, setLanguage] = useState("en")
   const [value] = useLocalStorage("translation", "", false)
   const [lang, setLang] = useLocalStorage("language", "", true)
+  console.log('language', language)
   useEffect(() => {
     const translation = JSON.parse(localStorage.getItem("translation"))
-    i18n.changeLanguage(localStorage.getItem("language") || "en")
+    i18n.changeLanguage(language || "en")
   }, [])
   useEffect(() => {
-    if (lang) {
+    if (lang !== "") {
       setLanguage(lang)
       i18n.changeLanguage(lang || "en")
     } else {

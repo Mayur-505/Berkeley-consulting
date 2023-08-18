@@ -7,9 +7,9 @@
     "title5": "블로그"
   },
   "landingPage": {
-    "title1": "IT 개발 시작과",
-    "title2": "끝을 함께하세요",
-    "subTitle": "글로벌 개발팀과 함께 합리적인 IT 프로젝트를 경험해보세요.",
+    "title1": "개발팀이 찾는",
+    "title2": "끝판왕 개발팀",
+    "subTitle": "실제 기업들의 개발팀이 찾는 끝판왕 글로벌 개발팀 버컨입니다.",
     "button": "견적 상담하기",
     "whyChoose": {
       "mainTitle": "모든 CEO분들의 외주 개발 고민",
@@ -23,16 +23,16 @@
       "title": "개발 관련 피드백 및 소통의 어려움",
       "subTitle": "첫 번째 솔루션",
       "text1": "버컨의 빠르고 친절한 피드백",
-      "text2": "무제한 디자인 수정 및 업무 비용 분할"
+      "text2": "고객만족도 100%를 실현하는 차별화된 서비스 제공"
     },
     "solution2": {
-      "title": "Problems with communication or feedback",
+      "title": "의사소통 또는 피드백 문제",
       "subTitle": "두 번째 솔루션",
-      "text1": "고객만족도 100%를 실현하는 차별화된 서비스 제공",
+      "text1": "무제한 설계 수정 및 작업/비용 분할",
       "text2": "저렴한 월간 컨설팅 비용 및 무엇이든 가능한 액션 플랜 제공"
     },
     "anythingWant": {
-      "mainTitle": "무엇이든 원하는대로,",
+      "mainTitle": "무엇이든 원하는대로",
       "title": "고객 맞춤형 디지털 솔루션",
       "card1": {
         "title": "기획",
@@ -52,15 +52,15 @@
     "developmentCost": {
       "mainTitle": "개발 비용 걱정은 그만!",
       "title": "작업자 매칭 비용 ZERO",
-      "subTitle": "Less costly, Raise your development skills",
+      "subTitle": "비용 걱정은 덜고, 높은 퀄리티를 경험해보세요!",
       "text1": {
-        "subText1": "Professionals earn an average annual salary of ",
-        "subText2": "$35,000",
+        "subText1": "1개의 서비스 제작 시 필요한 인력 4명",
+        "subText2": "전문가 평균 연봉 3천 500만원",
         "subText3": "4 people to create 1 service"
       },
       "text2": {
-        "subText1": "Reduce development costs by ",
-        "subText2": "1/2",
+        "subText1": "글로벌 개발팀과 함께 외주 개발 비용",
+        "subText2": "1/2 절감",
         "subText3": "with a global development team"
       }
     },
@@ -69,8 +69,8 @@
     "save": "50% 절감",
     "team": "글로벌 개발팀",
     "techStack": {
-      "mainTitle": "Lorem ipsum dolor sit amet",
-      "title": "B.C.'s tech stack",
+      "mainTitle": "수많은 개발 경험을 고려한",
+      "title": "버컨이 채택한 기술 스택",
       "card1": {
         "title1": "10 years of experience",
         "title2": "in furniture business",
@@ -103,109 +103,109 @@
       }
     },
     "devProcess": {
-      "mainTitle": "Lorem ipsum dolor sit amet",
-      "title": "Structured development process",
+      "mainTitle": "개발부터 유지보수까지 한 번에!",
+      "title": "탄탄하고 체계적인 개발 프로세스",
       "card1": {
-        "title": "Consulting",
-        "text1": "Service Plans",
-        "text2": "Wireframes",
-        "text3": "Prototypes",
-        "text4": "Business analysis",
-        "text5": "Development estimate reports"
+        "title": "컨설팅",
+        "text1": "서비스 기획",
+        "text2": "와이어 프레임",
+        "text3": "프로토 타입",
+        "text4": "비즈니스 분석",
+        "text5": "개발 견적 보고서"
       },
       "card2": {
-        "title": "Matching",
-        "text1": "Match developers in n days on average",
-        "text2": "Internal QC/QC testing",
-        "text3": "Uniform code rules/development culture",
-        "text4": "Global developer pool"
+        "title": "매칭",
+        "text1": "신속한 개발자 매칭",
+        "text2": "내부 QC 테스트",
+        "text3": "글로벌 개발자 풀 보유",
+        "text4": "매칭 피드백"
       },
       "card3": {
-        "title": "Development",
-        "text1": "Providing a Development Timeline",
-        "text2": "Real-Time Tracking",
-        "text3": "QC/QA",
-        "text4": "UAT scenarios"
+        "title": "개발",
+        "text1": "개발 타임라인 제공",
+        "text2": "실시간 트래킹",
+        "text3": "QC / QA 진행",
+        "text4": "UAT 시나리오"
       },
       "card4": {
-        "title": "Maintenance",
-        "text1": "Handoffs",
-        "text2": "Continuous feedback",
-        "text3": "Providing maintenance documentation",
-        "text4": "Defective repairs",
-        "text5": "Scaling server infrastructure"
+        "title": "유지보수",
+        "text1": "인수인계",
+        "text2": "지속적인 피드백",
+        "text3": "유지보수 문서 제공",
+        "text4": "하자보수",
+        "text5": "서버 인프라 확장"
       }
     },
     "reviews": {
-      "title": "Verified customer reviews"
+      "title": "버컨을 선택한 이유"
     },
     "review1": {
-      "userName": "Savannah Nguyen",
-      "role": "CEO Sans Brothers",
-      "text": "I was worried about the high cost of outsourcing development, but I was able to solve it through satisfactory planning and continuous feedback at a reasonable estimate."
+      "userName": "김0영",
+      "role": "마케팅 플랫폼",
+      "text": "개발 외주 비용이 많이 부담됐었는데,합리적인 견적비로 만족스러운 기획과 지속적인 피드백을 통해 해결할 수 있었습니다."
     },
     "review2": {
-      "userName": "Eleanor Pena",
-      "role": "CEO Sans Brothers",
-      "text": "Working with Berkeley Consulting's development/design team, it was smooth sailing as we were able to get our ongoing additions and change requests done in a timely manner."
+      "userName": "이0규",
+      "role": "법률 정보 플랫폼",
+      "text": "개발에 대한 지식이 부족한 탓에, 외주 개발사와의 소통이 어려울까봐 걱정했는데 원활한 소통을 통해 완벽하게 출시하게 됐어요."
     },
     "review3": {
-      "userName": "Zhafira Azalea",
-      "role": "CEO Sans Brothers",
-      "text": "They shared accurate estimates and schedules, so I felt confident in their maintenance."
+      "userName": "윤0수",
+      "role": "음악 플랫폼",
+      "text": "버클리 컨설팅의 개발/디자인 팀과 함께 하면서 계속 되는 추가, 변경 요청 사항을 빠른 시일 내로 끝낼 수 있어서 순조롭게 진행되었습니다."
     },
     "review4": {
-      "userName": "Ronald Richards",
-      "role": "CEO Sans Brothers",
-      "text": "During the project with VERCON, I was most satisfied with the consultation and feedback on the estimate and development schedule."
+      "userName": "이0근",
+      "role": "마케팅 플랫폼",
+      "text": "디자인이나 업무 계획이 분할로 계산되어서 부담없이 필요한 기술을 골라 서비스에 접목시킬 수 있었습니다."
     },
     "review5": {
-      "userName": "Rakabuming Suhu",
-      "role": "CEO Sans Brothers",
-      "text": "In addition to the global development team, there was a large pool of partners, and we were able to save a lot of money overall because we were working in English from the beginning."
+      "userName": "정0수",
+      "role": "마케팅 플랫폼",
+      "text": "정확한 견적과 일정을 공유해주셔서 유지보수가 확실한 업체라고 생각했습니다."
     },
     "review6": {
-      "userName": "Jerome Bell",
-      "role": "CEO Sans Brothers",
-      "text": "I was worried that it would be difficult to communicate with the outsourced developer due to my lack of development knowledge, but the communication was seamless and the launch was flawless."
+      "userName": "임0호",
+      "role": "마케팅 플랫폼",
+      "text": "기업의 규모에 따른 개발 예산 및 범위에 대한 피드백 덕분에 개발의 시작부터 끝까지 수월하게 해결 할 수 있었습니다."
     },
     "review7": {
-      "userName": "Jammy Jems",
-      "role": "CEO Sans Brothers",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      "userName": "김0원",
+      "role": "마케팅 플랫폼",
+      "text": "버컨과 함께 프로젝트를 진행하면서 견적 및 개발 일정에 대한 상담과 피드백이 가장 만족스러웠습니다."
     },
     "review8": {
-      "userName": "Richard fackles",
-      "role": "CEO Sans Brothers",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      "userName": "현0용",
+      "role": "마케팅 플랫폼",
+      "text": "타 업체의 견적 비용보다 훨씬 더 합리적인 비용으로 전문적인 서비스를 경험해볼 수 있었습니다."
     },
     "review9": {
-      "userName": "Katherine fernadence",
-      "role": "CEO Sans Brothers",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      "userName": "서0형",
+      "role": "마케팅 플랫폼",
+      "text": "글로벌 개발팀과 더불어 다양한 파트너 풀이 존재했고, 처음부터 영문으로 제작하기 때문에 전반적으로 비용을 훨씬 아낄 수 있었습니다."
     },
     "review10": {
-      "userName": "Garry Lu",
-      "role": "CEO Sans Brothers",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      "userName": "차0일",
+      "role": "마케팅 플랫폼",
+      "text": "견적 상담부터 계약까지 꽤나 까다로운 과정임에도 불구하고 IT 업계나 서비스에 대한 이해도가 높고 프로세스를 체계적으로 관리하는 업체임을 알 수 있었습니다."
     },
     "portfolio": {
-      "title": "Our Portfolio"
+      "title": "포트폴리오"
     },
     "clients": {
       "count": "40+",
-      "text": "Happy Clients"
+      "text": "고객사"
     },
     "projects": {
       "count": "540+",
-      "text": "Projects Completed"
+      "text": "완료된 프로젝트 수"
     },
     "members": {
       "count": "20",
-      "text": "Dedicated Members"
+      "text": "지속적인 협력사"
     },
     "faq": {
-      "mainTitle": "Have any questions? Get in Touch",
+      "mainTitle": "추가로 궁금하신 점은 여기를 터치해주세요.",
       "title": "Frequently asked questions"
     },
     "faq1": {
