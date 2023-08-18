@@ -1,8 +1,9 @@
-import React, { useEffect, useState, useCallback } from 'react'
+import React, { useEffect, useState, useCallback, useContext } from 'react'
 import { useTranslation } from 'react-i18next'
 import styles from "./nav.module.css";
 import { useRouter } from 'next/router';
 import Language from '../language';
+import LanguageContext from '@/context/language';
 
 const Nav = () => {
   const { t } = useTranslation()
@@ -11,6 +12,7 @@ const Nav = () => {
   const [isScrollValueMoreThanHeaderHeight, setIsScrollValueMoreThanHeaderHeight] = useState(false);
   const [isActivem, setisActivem] = useState(false)
   const [isLanguageOpen, setLanguageOpen] = useState(false);
+  const { lang } = useContext(LanguageContext)
 
   const toggleHandler = () => {
     setisActivem(!isActivem);
@@ -75,9 +77,11 @@ const Nav = () => {
             <div className={`relative ${active === 4 ? "text-greys-grey-08" : "text-greys-grey-04"} hover:text-greys-grey-08 active:text-greys-grey-08 focus:text-greys-grey-08 cursor-pointer tracking-[0.02em] leading-[24px] text-[18px]`} onClick={() => setActive(4)}>
               {t("navBar.title5")}
             </div>
+          </div>
+          <div className='flex flex-row items-center justify-end lg:ms-[60px] md:ms-[40px] ms-[40px]'>
             <div className="relative">
               <div className="div language-currency me-[15px] cursor-pointer items-center flex" onClick={openLanguage}>
-                <img className="img me-[5px]" alt="Vector" src="/image 5.svg" />
+                <img className="img me-[5px] h-[30px] w-[40px]" alt="Vector" src={lang == 'en' ? "/image 5.svg" : "south-korea.png"} />
                 <img className="rectangle" alt="Rectangle" src="/img/rectangle-2083.svg" />
               </div>
               {
@@ -86,18 +90,18 @@ const Nav = () => {
                 )
               }
             </div>
-          </div>
-          <div className="flex items-center">
-            <div className={`order-1 flex items-center ${styles.megamenuMain} justify-end me-3`}>
-              <button
-                className="navbar-toggler order-1 text-[20px] bg-[transparent] border-[0]"
-                onClick={toggleHandler}
-                type="button"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="15" viewBox="0 0 29 15" fill="none">
-                  <path d="M1 1H28M1 13.5H28" stroke="black" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" />
-                </svg>
-              </button>
+            <div className="flex items-center">
+              <div className={`order-1 flex items-center ${styles.megamenuMain} justify-end me-3`}>
+                <button
+                  className="navbar-toggler order-1 text-[20px] bg-[transparent] border-[0]"
+                  onClick={toggleHandler}
+                  type="button"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="15" viewBox="0 0 29 15" fill="none">
+                    <path d="M1 1H28M1 13.5H28" stroke="black" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>

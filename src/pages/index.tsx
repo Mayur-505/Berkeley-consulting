@@ -475,7 +475,7 @@ const BCLandingPage: NextPage = () => {
                     alt=""
                     src="/union.svg"
                   />
-                  <div className="my-0 mx-[!important] absolute top-[24px] left-[24px] flex flex-row items-center justify-start gap-[24px] z-[1]">
+                  <div className={`my-0 mx-[!important] absolute top-[24px] left-[24px] flex flex-row items-center justify-start gap-[24px] z-[1] ${styles.outSourcercontent}`}>
                     <div className="relative w-20 h-20">
                       <img
                         className="absolute h-[105%] w-[105%] top-[-2.5%] right-[-2.5%] bottom-[-2.5%] left-[-2.5%] max-w-full overflow-hidden max-h-full"
@@ -494,7 +494,7 @@ const BCLandingPage: NextPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="relative leading-[32px] font-medium flex items-center max-w-[73%] pr-[15px] shrink-0">
+                    <div className={`relative leading-[32px] font-medium flex items-center max-w-[73%] pr-[15px] shrink-0 ${styles.outSourcercontentmain}`}>
                       {t("landingPage.whyChoose.option1")}
                     </div>
                   </div>
@@ -505,7 +505,7 @@ const BCLandingPage: NextPage = () => {
                     alt=""
                     src="/union1.svg"
                   />
-                  <div className="my-0 mx-[!important] absolute top-[24px] left-[24px] flex flex-row items-center justify-start gap-[24px] z-[1]">
+                  <div className={`my-0 mx-[!important] absolute top-[24px] left-[24px] flex flex-row items-center justify-start gap-[24px] z-[1] ${styles.outSourcercontent}`}>
                     <div className="relative w-20 h-20">
                       <img
                         className="absolute h-[102.5%] w-[102.5%] top-[-1.25%] right-[-1.25%] bottom-[-1.25%] left-[-1.25%] max-w-full overflow-hidden max-h-full"
@@ -524,7 +524,7 @@ const BCLandingPage: NextPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="relative leading-[32px] font-medium flex items-center max-w-[73%] pr-[15px] shrink-0">
+                    <div className={`relative leading-[32px] font-medium flex items-center max-w-[73%] pr-[15px] shrink-0 ${styles.outSourcercontentmain}`}>
                       {t("landingPage.whyChoose.option2")}
                     </div>
                   </div>
@@ -535,7 +535,7 @@ const BCLandingPage: NextPage = () => {
                     alt=""
                     src="/union2.svg"
                   />
-                  <div className="my-0 mx-[!important] absolute top-[24px] left-[24px] flex flex-row items-center justify-start gap-[24px] z-[1]">
+                  <div className={`my-0 mx-[!important] absolute top-[24px] left-[24px] flex flex-row items-center justify-start gap-[24px] z-[1] ${styles.outSourcercontent}`}>
                     <div className="relative w-20 h-20">
                       <img
                         className="absolute h-[102.5%] w-[102.5%] top-[-1.25%] right-[-1.25%] bottom-[-1.25%] left-[-1.25%] max-w-full overflow-hidden max-h-full"
@@ -554,7 +554,7 @@ const BCLandingPage: NextPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="relative leading-[32px] font-medium flex items-center max-w-[73%] pr-[15px] shrink-0">
+                    <div className={`relative leading-[32px] font-medium flex items-center max-w-[73%] pr-[15px] shrink-0 ${styles.outSourcercontentmain}`}>
                       {t("landingPage.whyChoose.option3")}
                     </div>
                   </div>
@@ -565,7 +565,7 @@ const BCLandingPage: NextPage = () => {
                     alt=""
                     src="/union3.svg"
                   />
-                  <div className="my-0 mx-[!important] absolute top-[24px] left-[24px] flex flex-row items-center justify-start gap-[24px] z-[1]">
+                  <div className={`my-0 mx-[!important] absolute top-[24px] left-[24px] flex flex-row items-center justify-start gap-[24px] z-[1] ${styles.outSourcercontent}`}>
                     <div className="relative w-20 h-20">
                       <img
                         className="absolute h-[102.5%] w-[102.5%] top-[-1.25%] right-[-1.25%] bottom-[-1.25%] left-[-1.25%] max-w-full overflow-hidden max-h-full"
@@ -584,7 +584,7 @@ const BCLandingPage: NextPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="relative leading-[32px] font-medium flex items-center max-w-[73%] pr-[15px] shrink-0">
+                    <div className={`relative leading-[32px] font-medium flex items-center max-w-[73%] pr-[15px] shrink-0 ${styles.outSourcercontentmain}`}>
                       {t("landingPage.whyChoose.option4")}
                     </div>
                   </div>

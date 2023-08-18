@@ -16,6 +16,18 @@
 .imgractangle{
   display: none;
 }
+.languageTitle1 {
+  left: -20px;
+}
+.languageTitle2 {
+  right: -20px;
+}
+.languageTitle3 {
+  right: -180px;
+}
+.languageTitle4 {
+  left: -180px;
+}
 @media (max-width: 1354px) {
   .mxW390{
     max-width: 390px;
@@ -66,6 +78,7 @@
   .mxW390{
     max-width: 100%;
     width: 91%;
+    height: fit-content;
   }
   .languageTitle1 {
     left: -60px;
@@ -156,6 +169,11 @@
   .languageTitle4 {
     left: 10px;
   }
+  .outSourcercontent {
+    top: 49%;
+    left: 25px;
+    transform: translate(0%, -50%);
+  }
 }
 @media (max-width: 462px) {
   .devCostLeftConner {
@@ -175,6 +193,25 @@
     padding: 2.75rem 22px 0;
   }
   .positionInherit{
-    margin-bottom: -17px;
+    margin-bottom: 15px;
+  }
+  .languageTitle1 {
+    left: 5px;
+    top: -30px;
+  }
+  .languageTitle2 {
+    right: 5px;
+    top: -20px;
+  }
+  .languageTitle3 {
+    right: 10px;
+    bottom: 140px;
+  }
+  .languageTitle4 {
+    left: 10px;
+    bottom: 155px;
+  }
+  .outSourcercontentmain{
+    line-height: 24px;
   }
 }
