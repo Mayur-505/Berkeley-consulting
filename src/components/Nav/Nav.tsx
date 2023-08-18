@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
 import styles from "./nav.module.css";
 import { useRouter } from 'next/router';
+import Language from '../language';
 
 const Nav = () => {
   const { t } = useTranslation()
@@ -9,6 +10,7 @@ const Nav = () => {
   const router = useRouter()
   const [isScrollValueMoreThanHeaderHeight, setIsScrollValueMoreThanHeaderHeight] = useState(false);
   const [isActivem, setisActivem] = useState(false)
+  const [isLanguageOpen, setLanguageOpen] = useState(false);
 
   const toggleHandler = () => {
     setisActivem(!isActivem);
@@ -39,6 +41,14 @@ const Nav = () => {
     }
   }, [isScrollValueMoreThanHeaderHeight])
 
+  const openLanguage = useCallback(() => {
+    setLanguageOpen(!isLanguageOpen);
+  }, [isLanguageOpen]);
+
+  const closeLanguage = useCallback(() => {
+    setLanguageOpen(false);
+  }, []);
+
   return (
     <div className={`${styles.NavContainer} nav-main font-general-sans`}>
       <div className="container mx-[auto]">
@@ -64,6 +74,17 @@ const Nav = () => {
             </div>
             <div className={`relative ${active === 4 ? "text-greys-grey-08" : "text-greys-grey-04"} hover:text-greys-grey-08 active:text-greys-grey-08 focus:text-greys-grey-08 cursor-pointer tracking-[0.02em] leading-[24px] text-[18px]`} onClick={() => setActive(4)}>
               {t("navBar.title5")}
+            </div>
+            <div className="relative">
+              <div className="div language-currency me-[15px] cursor-pointer items-center flex" onClick={openLanguage}>
+                <img className="img me-[5px]" alt="Vector" src="/image 5.svg" />
+                <img className="rectangle" alt="Rectangle" src="/img/rectangle-2083.svg" />
+              </div>
+              {
+                isLanguageOpen && (
+                  <Language onClose={closeLanguage} />
+                )
+              }
             </div>
           </div>
           <div className="flex items-center">
