@@ -1,26 +1,15 @@
-"use client"
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import { Html, Head, Main, NextScript } from 'next/document'
 import { I18nextProvider, useTranslation } from "react-i18next";
-import "../styles/style.css"
-import "../styles/secstyle.css"
-import "../styles/portstyle.css"
-import "../styles/blurStyle.css"
-import "../styles/buttonStyle.css"
-import "../styles/formStyle.css"
-import "../styles/inputStyle.css"
-import LanguageContext from '@/context/language';
 import i18ns from "../i18n"
 import { useEffect, useState } from 'react';
 import useLocalStorage from '@/hooks/useLocalStorage';
+import LanguageContext from '@/context/language';
 
-// import { useEffect } from 'react'
-
-// function MyApp({ Component, pageProps }: AppProps) {
-//   return <Component {...pageProps} />
-// }
-
-function MyApp({ Component, pageProps }: AppProps) {
+export default function Document({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   const { i18n } = useTranslation()
   const [language, setLanguage] = useState("en")
   const [value] = useLocalStorage("translation", "", false)
@@ -48,21 +37,44 @@ function MyApp({ Component, pageProps }: AppProps) {
           },
           ko: {
             translation: value?.ko,
+          },
+          chi: {
+            translation: value?.chi,
           }
         },
         interpolation: {
           escapeValue: false,
         },
       });
-  }, [value?.en, value?.ko])
-
+  }, [value])
   return (
-    <I18nextProvider i18n={i18ns}>
-      <LanguageContext.Provider value={{ lang: language, setLang: setLanguage }}>
-        <Component {...pageProps} />
-      </LanguageContext.Provider>
-    </I18nextProvider>
-  );
+    <Html lang="en">
+      <I18nextProvider i18n={i18ns}>
+        <LanguageContext.Provider value={{ lang: language, setLang: setLanguage }}>
+          <Head />
+          <body>
+            <Main />
+            <NextScript />
+          </body>
+        </LanguageContext.Provider>
+      </I18nextProvider>
+    </Html>
+  )
 }
+// import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-export default MyApp;
+// class MyDocument extends Document {
+//   render() {
+//     return (
+//       <Html lang="en">
+//         <Head />
+//         <body>
+//           <Main />
+//           <NextScript />
+//         </body>
+//       </Html>
+//     );
+//   }
+// }
+
+// export default MyDocument;

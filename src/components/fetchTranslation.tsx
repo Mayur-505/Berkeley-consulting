@@ -3,7 +3,7 @@
 const { GoogleSpreadsheet } = require("google-spreadsheet");
 const secret = require("../../secret.json");
 import { JWT } from 'google-auth-library'
-import file from "../../public/locales/en/common.json"
+import file from "../../public/locales/en/translation.json"
 import path from 'path';
 import fs from "fs"
 //# Initialize the sheet
@@ -82,7 +82,7 @@ export const fetchTranslation = async () => {
   const write = async (data) => {
     Object.keys(data).forEach((key, i) => {
       fs.writeFile(
-        `./public/locales/${key}/common.json`,
+        `./public/locales/${key}/translation.json`,
         "{}",
         (err) => {
           if (err) {
@@ -95,7 +95,7 @@ export const fetchTranslation = async () => {
       const tempObject = Object.expand(data[key]);
       try {
         fs.writeFile(
-          `./public/locales/${key}/common.json`,
+          `./public/locales/${key}/translation.json`,
           JSON.stringify(tempObject, null, 2),
           (err) => {
             if (err) {

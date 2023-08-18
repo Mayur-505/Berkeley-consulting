@@ -1,12 +1,12 @@
 const path = require('path');
-const enTranslations = require('./public/locales/en/common.json');
-const koTranslations = require('./public/locales/ko/common.json');
-const chiTranslations = require('./public/locales/chi/common.json');
+const enTranslations = require('./public/locales/en/translation.json');
+const koTranslations = require('./public/locales/ko/translation.json');
+const chiTranslations = require('./public/locales/chi/translation.json');
 
 module.exports = {
   i18n: {
     locales: ['default', 'en', 'chi', 'ko'],
-    defaultNS: 'common',
+    defaultNS: 'translation',
     defaultLocale: 'en',
     localePath: path.resolve('./public/locales'),
   },

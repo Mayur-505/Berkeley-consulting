@@ -87,7 +87,7 @@ export async function GET() {
                 const tempObject = await Object.expand(data[key]);
                 return new Promise((resolve, reject) => {
                     fs.writeFile(
-                        `./public/locales/${key}/common.json`,
+                        `./public/locales/${key}/translation.json`,
                         JSON.stringify(tempObject, null, 2),
                         (err) => {
                             if (err) {

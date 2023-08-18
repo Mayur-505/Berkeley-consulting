@@ -1,0 +1,268 @@
+{
+  "navBar": {
+    "title1": "솔루션",
+    "title2": "개발 프로세스",
+    "title3": "포트폴리오",
+    "title4": "자주 묻는 질문",
+    "title5": "블로그"
+  },
+  "landingPage": {
+    "title1": "IT 개발 시작과",
+    "title2": "끝을 함께하세요",
+    "subTitle": "글로벌 개발팀과 함께 합리적인 IT 프로젝트를 경험해보세요.",
+    "button": "견적 상담하기",
+    "whyChoose": {
+      "mainTitle": "모든 CEO분들의 외주 개발 고민",
+      "title": "외주 개발의 문제점",
+      "option1": "외주 개발을 맡겼는데, 개발 지식이 부족해서 소통이 힘들어요.",
+      "option2": "추가 비용은 계속 늘어나는 데, 유지보수 서비스가 엉망이에요.",
+      "option3": "어디서부터 어떻게 요청해야 할까요?",
+      "option4": "개발 비용 대비 퀄리티가 만족스럽지 않아요."
+    },
+    "solution1": {
+      "title": "개발 관련 피드백 및 소통의 어려움",
+      "subTitle": "첫 번째 솔루션",
+      "text1": "버컨의 빠르고 친절한 피드백",
+      "text2": "무제한 디자인 수정 및 업무 비용 분할"
+    },
+    "solution2": {
+      "title": "Problems with communication or feedback",
+      "subTitle": "두 번째 솔루션",
+      "text1": "고객만족도 100%를 실현하는 차별화된 서비스 제공",
+      "text2": "저렴한 월간 컨설팅 비용 및 무엇이든 가능한 액션 플랜 제공"
+    },
+    "anythingWant": {
+      "mainTitle": "무엇이든 원하는대로,",
+      "title": "고객 맞춤형 디지털 솔루션",
+      "card1": {
+        "title": "기획",
+        "text": "비즈니스 분석 및 설계를 시작으로, 고객님의 니즈를 완벽히 반영한 탄탄한 기획을 제공합니다."
+      },
+      "card2": {
+        "title": "디자인",
+        "text": "8년 간의 IT 사업 노하우로 전 세계에 있는 파트너와 함께 무제한 디자인 수정 / 비용 분할 서비스를 제공합니다."
+      },
+      "card3": {
+        "title": "개발",
+        "text": "뛰어난 실력의 글로벌 개발팀과 함께 가장 최적화된 개발 서비스를 제공합니다."
+      },
+      "text1": "가장 최적화된 IT 개발 서비스",
+      "text2": "외주 개발이 아닌, 당신의 비즈니스와 함께 합니다."
+    },
+    "developmentCost": {
+      "mainTitle": "개발 비용 걱정은 그만!",
+      "title": "작업자 매칭 비용 ZERO",
+      "subTitle": "Less costly, Raise your development skills",
+      "text1": {
+        "subText1": "Professionals earn an average annual salary of ",
+        "subText2": "$35,000",
+        "subText3": "4 people to create 1 service"
+      },
+      "text2": {
+        "subText1": "Reduce development costs by ",
+        "subText2": "1/2",
+        "subText3": "with a global development team"
+      }
+    },
+    "wage": "인건비",
+    "infra": "기타 비용",
+    "save": "50% 절감",
+    "team": "글로벌 개발팀",
+    "techStack": {
+      "mainTitle": "Lorem ipsum dolor sit amet",
+      "title": "B.C.'s tech stack",
+      "card1": {
+        "title1": "10 years of experience",
+        "title2": "in furniture business",
+        "text": "We’re already established since 2012, and in 10 years we have lots of positive\n reviews and achievements"
+      },
+      "card2": {
+        "title1": "Afforable price with",
+        "title2": "world class quality",
+        "text": "Our craftsmen have lots of experience dealing with crafting furnitures and some \nof them have world class quality"
+      },
+      "card3": {
+        "title1": "Bring your ideas into",
+        "title2": "a living product",
+        "text": "Besides you can buy the existing product, you can also consultate with us also \nto make your dream furniture"
+      },
+      "card4": {
+        "title1": "10 years of experience",
+        "title2": "in furniture business",
+        "text": "We’re already established since 2012, and in 10 years we have lots of positive \nreviews and achievements"
+      },
+      "card5": {
+        "title1": "Afforable price with",
+        "title2": "world class quality",
+        "text": "Our craftsmen have lots of experience dealing with crafting furnitures and some \nof them have world class quality"
+      },
+      "card6": {
+        "title1": "Bring your ideas into",
+        "title2": "a living product",
+        "text": "Besides you can buy the existing product, you can also consultate with us also \nto make your dream furniture"
+      }
+    },
+    "devProcess": {
+      "mainTitle": "Lorem ipsum dolor sit amet",
+      "title": "Structured development process",
+      "card1": {
+        "title": "Consulting",
+        "text1": "Service Plans",
+        "text2": "Wireframes",
+        "text3": "Prototypes",
+        "text4": "Business analysis",
+        "text5": "Development estimate reports"
+      },
+      "card2": {
+        "title": "Matching",
+        "text1": "Match developers in n days on average",
+        "text2": "Internal QC/QC testing",
+        "text3": "Uniform code rules/development culture",
+        "text4": "Global developer pool"
+      },
+      "card3": {
+        "title": "Development",
+        "text1": "Providing a Development Timeline",
+        "text2": "Real-Time Tracking",
+        "text3": "QC/QA",
+        "text4": "UAT scenarios"
+      },
+      "card4": {
+        "title": "Maintenance",
+        "text1": "Handoffs",
+        "text2": "Continuous feedback",
+        "text3": "Providing maintenance documentation",
+        "text4": "Defective repairs",
+        "text5": "Scaling server infrastructure"
+      }
+    },
+    "reviews": {
+      "title": "Verified customer reviews"
+    },
+    "review1": {
+      "userName": "Savannah Nguyen",
+      "role": "CEO Sans Brothers",
+      "text": "I was worried about the high cost of outsourcing development, but I was able to solve it through satisfactory planning and continuous feedback at a reasonable estimate."
+    },
+    "review2": {
+      "userName": "Eleanor Pena",
+      "role": "CEO Sans Brothers",
+      "text": "Working with Berkeley Consulting's development/design team, it was smooth sailing as we were able to get our ongoing additions and change requests done in a timely manner."
+    },
+    "review3": {
+      "userName": "Zhafira Azalea",
+      "role": "CEO Sans Brothers",
+      "text": "They shared accurate estimates and schedules, so I felt confident in their maintenance."
+    },
+    "review4": {
+      "userName": "Ronald Richards",
+      "role": "CEO Sans Brothers",
+      "text": "During the project with VERCON, I was most satisfied with the consultation and feedback on the estimate and development schedule."
+    },
+    "review5": {
+      "userName": "Rakabuming Suhu",
+      "role": "CEO Sans Brothers",
+      "text": "In addition to the global development team, there was a large pool of partners, and we were able to save a lot of money overall because we were working in English from the beginning."
+    },
+    "review6": {
+      "userName": "Jerome Bell",
+      "role": "CEO Sans Brothers",
+      "text": "I was worried that it would be difficult to communicate with the outsourced developer due to my lack of development knowledge, but the communication was seamless and the launch was flawless."
+    },
+    "review7": {
+      "userName": "Jammy Jems",
+      "role": "CEO Sans Brothers",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    },
+    "review8": {
+      "userName": "Richard fackles",
+      "role": "CEO Sans Brothers",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    },
+    "review9": {
+      "userName": "Katherine fernadence",
+      "role": "CEO Sans Brothers",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    },
+    "review10": {
+      "userName": "Garry Lu",
+      "role": "CEO Sans Brothers",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    },
+    "portfolio": {
+      "title": "Our Portfolio"
+    },
+    "clients": {
+      "count": "40+",
+      "text": "Happy Clients"
+    },
+    "projects": {
+      "count": "540+",
+      "text": "Projects Completed"
+    },
+    "members": {
+      "count": "20",
+      "text": "Dedicated Members"
+    },
+    "faq": {
+      "mainTitle": "Have any questions? Get in Touch",
+      "title": "Frequently asked questions"
+    },
+    "faq1": {
+      "question": "1. I'd like an estimate of the cost.",
+      "answer": "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible."
+    },
+    "faq2": {
+      "question": "2. How does the contract process work?",
+      "answer": ", personalized 30-minute onboarding call to get you up and running as soon as possible."
+    },
+    "faq3": {
+      "question": "3. How does maintenance work?",
+      "answer": "Yes, you can try us for free for 30 days."
+    },
+    "faq4": {
+      "question": "4. I need to proceed with a limited budget, is it possible?",
+      "answer": ", personalized 30-minute onboarding call to get you up and running as soon as possible."
+    },
+    "faq5": {
+      "question": "5. I would like to talk to you in more detail.",
+      "answer": "Yes, you can try us for free for 30 days."
+    }
+  },
+  "footer": {
+    "banner": {
+      "title": "Ready to collaborate?",
+      "text": "Start your business with us! ",
+      "button": "Get a Quote"
+    },
+    "text": "Live up your life!, While knowing that your loved ones and you are protected by us.",
+    "company": {
+      "title": "Company",
+      "text1": "About",
+      "text2": "Careers",
+      "text3": "Our Blog",
+      "text4": "Contact Us"
+    },
+    "service": {
+      "title": "Services",
+      "text1": "Integration",
+      "text2": "Customers",
+      "text3": "Pricing",
+      "text4": "Help Center"
+    },
+    "support": {
+      "title": "Support",
+      "text1": "Terms of Use",
+      "text2": "Privacy Policy",
+      "text3": "Cookie Policy",
+      "text4": "Site Map"
+    },
+    "help": {
+      "title": "Help Center",
+      "text1": "Community",
+      "text2": "Knowledge Base",
+      "text3": "Academy",
+      "text4": "Support"
+    }
+  }
+}
