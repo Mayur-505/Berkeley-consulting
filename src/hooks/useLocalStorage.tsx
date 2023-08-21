@@ -12,7 +12,7 @@ const useLocalStorage = (key, initialValue, noObj) => {
             }
 
         } catch (error) {
-            console.log(error)
+            // console.log(error)
         }
     })
 
@@ -26,7 +26,7 @@ const useLocalStorage = (key, initialValue, noObj) => {
                 setState(value)
             }
         } catch (error) {
-            console.log(error)
+            // console.log(error)
         }
     }
 

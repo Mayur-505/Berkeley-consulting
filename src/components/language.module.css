@@ -61,7 +61,7 @@
   font-family: var(--body-14);
   position: absolute;
   top: 30px;
-  left: 0;
+  left: -50px;
   z-index: 999;
   display: inline-table;
   border-radius: 10px;

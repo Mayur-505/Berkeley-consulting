@@ -1,31 +1,24 @@
 .form {
   align-items: center;
-  background-color: #ffffff;
   border-radius: 24px;
-  box-shadow: 0px 34px 124px #00000024;
   display: inline-flex;
   flex-direction: column;
   gap: 44px;
-  overflow: hidden;
-  padding: 64px;
   position: relative;
+  width: 100%;
 }
 
 .form .frame {
-  align-items: center;
-  border: 1px solid;
-  border-color: var(--greysgrey-10);
   border-radius: 75px;
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 10px;
-  justify-content: center;
   padding: 4px 34px;
+  border: 1px solid var(--primary-purple-06, #2563EB);
   position: relative;
+  margin: 30px auto;
+  width: fit-content;
 }
 
 .form .text-wrapper-2 {
-  color: var(--greysgrey-10);
+  color: var(--primary-purple-06, #2563EB);
   font-family: var(--32-heading-6-medium-font-family);
   font-size: var(--32-heading-6-medium-font-size);
   font-style: var(--32-heading-6-medium-font-style);
@@ -35,8 +28,6 @@
   margin-top: -1px;
   position: relative;
   text-align: center;
-  white-space: nowrap;
-  width: fit-content;
 }
 
 .form .please-fill-in-brief {
@@ -49,6 +40,7 @@
   line-height: 56px;
   position: relative;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .form .span {
@@ -75,7 +67,7 @@
   flex-direction: column;
   gap: 14px;
   position: relative;
-  width: 1152px;
+  width: 100%;
 }
 
 .form .input-box-instance {
@@ -96,10 +88,6 @@
 }
 
 .form .frame-3 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
   gap: 14px;
   position: relative;
   width: 100%;
@@ -109,7 +97,7 @@
   flex: 1 !important;
   flex-grow: 1 !important;
   height: 74px !important;
-  width: unset !important;
+  /* width: unset !important; */
 }
 
 .form .input-box-4 {
@@ -117,11 +105,11 @@
   flex-grow: 1 !important;
   height: 74px !important;
   opacity: 0 !important;
-  width: unset !important;
+  /* width: unset !important; */
 }
 
 .form .button-instance {
-  background-color: var(--shadeblack-06) !important;
+  /* background-color: var(--shadeblack-06) !important; */
   flex: 0 0 auto !important;
 }
 
@@ -129,4 +117,10 @@
   height: 24px !important;
   position: relative !important;
   width: 24px !important;
+}
+
+@media (max-width: 991px) {
+  .form .text-wrapper-2 {
+    line-height: 28px;
+  }
 }

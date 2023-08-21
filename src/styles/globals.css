@@ -409,11 +409,15 @@ body {
   display: none !important;
 }
 .ReactModal__Content.ReactModal__Content--after-open {
-  height: 508px;
+  padding: 0 !important;
 }
 
 .ReactModal__Overlay {
   inset: 0px 0px !important;
+}
+.ReactModalPortal{
+  z-index: 999;
+  position: relative;
 }
 
 .sticky-header {
@@ -451,6 +455,11 @@ body {
 @media (max-width: 1400px) {
   .container {
     max-width: 1320px !important;
+  }
+}
+@media (max-width: 1199px) {
+  .ReactModal__Content {
+    width: 90%;
   }
 }
 
@@ -503,6 +512,9 @@ body {
   }
   .lineHeight77{
     line-height: 77px !important;
+  }
+  .lineHeight28{
+    line-height: 28px !important;
   }
   .common-round-icon {
     display: none;

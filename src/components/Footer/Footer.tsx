@@ -46,7 +46,7 @@ const Footer = () => {
             </Grid>
             <Grid item lg={2} md={3} sm={6} xs={12}>
               <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
-                <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block w-[92px] h-[26px] shrink-0">
+                <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block h-[26px] shrink-0">
                   {t("footer.company.title")}
                 </div>
                 <div className="flex flex-col items-start justify-start gap-[16px] opacity-[0.8] text-base">
@@ -67,7 +67,7 @@ const Footer = () => {
             </Grid>
             <Grid item lg={2} md={3} sm={6} xs={12}>
               <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
-                <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block w-[78px] h-[26px] shrink-0">
+                <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block h-[26px] shrink-0">
                   {t("footer.service.title")}
                 </div>
                 <div className="flex flex-col items-start justify-start gap-[16px] opacity-[0.8] text-base">
@@ -88,7 +88,7 @@ const Footer = () => {
             </Grid>
             <Grid item lg={2} md={3} sm={6} xs={12}>
               <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
-                <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block w-[74px] h-[26px] shrink-0">
+                <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block h-[26px] shrink-0">
                   {t("footer.support.title")}
                 </div>
                 <div className="flex flex-col items-start justify-start gap-[16px] opacity-[0.8] text-base">
@@ -109,7 +109,7 @@ const Footer = () => {
             </Grid>
             <Grid item lg={2} md={3} sm={6} xs={12}>
               <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
-                <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block w-[109px] h-[26px] shrink-0">
+                <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block h-[26px] shrink-0">
                   {t("footer.help.title")}
                 </div>
                 <div className="flex flex-col items-start justify-start gap-[16px] opacity-[0.8] text-base">
