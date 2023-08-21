@@ -28,6 +28,10 @@
 .languageTitle4 {
   left: -180px;
 }
+.solutionContent {
+  width: fit-content;
+  margin: 0 auto;
+}
 @media (max-width: 1354px) {
   .mxW390{
     max-width: 390px;

@@ -1,6 +1,6 @@
 "use client"
 import type { NextPage } from "next";
-import { useCallback, useReducer, useRef, useState } from "react";
+import { useCallback, useContext, useReducer, useRef, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
@@ -12,6 +12,7 @@ import styles from './bcLanding.module.css'
 import Footer from "@/components/Footer/Footer";
 import { Grid } from "@mui/material";
 import useWindowSize from '@/hooks/useWindowSize';
+import LanguageContext from "@/context/language";
 
 const settingsPortfolio = {
   dots: false,
@@ -144,6 +145,7 @@ const BCLandingPage: NextPage = () => {
   const reviewsSlider = useRef<any>();
   const [isLanguageOpen, setLanguageOpen] = useState(false);
   const { width } = useWindowSize()
+  const { lang } = useContext(LanguageContext)
 
   const next = () => {
     reviewsSlider?.current?.slickNext();
@@ -378,6 +380,10 @@ const BCLandingPage: NextPage = () => {
     ]
   };
 
+  const translatedText = t("landingPage.faq.mainTitle");
+  const parts = translatedText.split("여기");
+  const boldPart = parts.length > 1 ? <strong>여기</strong> : "여기";
+
   return (
     <>
       <div className={`bg-white font-general-sans`}>
@@ -595,20 +601,20 @@ const BCLandingPage: NextPage = () => {
               <Grid item xs={12} container spacing={4}>
                 {solutionArr?.map((item: any, index: number) => {
                   return <Grid item lg={6} md={6} sm={12} xs={12} key={index}>
-                    <div className="flex-1 rounded-3xl flex flex-col p-6 box-border items-start justify-start gap-[54px]">
-                      <div className="self-stretch flex-1 relative leading-[48px] font-medium fs-32">
+                    <div className="flex-1 rounded-3xl flex flex-col p-6 box-border items-center text-center justify-center gap-[54px]">
+                      <div className={`relative leading-[48px] lg:h-[96px] md:h-[96px] sm:h-[100%] h-[100%] fs-32 ${lang === 'ko' ? "font-bold" : "font-medium"}`}>
                         {item.title}
                       </div>
-                      <div className="self-stretch flex flex-col items-start justify-start gap-[24px] text-5xl text-primary-purple-06">
-                        <div className="rounded-61xl flex flex-row py-2 px-[34px] items-start justify-start border-[1px] border-solid border-primary-purple-06">
-                          <div className="relative leading-[32px] fs-18">{item.subtitle}</div>
+                      <div className="self-stretch flex flex-col items-start justify-center gap-[24px] text-5xl text-primary-purple-06">
+                        <div className="rounded-61xl flex flex-row py-2 px-[34px] items-start justify-center border-[1px] border-solid border-primary-purple-06 m-auto">
+                          <div className={`relative leading-[32px] fs-18 ${lang === 'ko' ? "font-bold" : ""}`}>{item.subtitle}</div>
                         </div>
                         <div className="self-stretch relative text-[inherit] tracking-[0.02em] leading-[32px] font-inherit text-greys-grey-07">
                           <ul className="m-0 pl-6 text-lg">
-                            <li className="mb-0">
+                            <li className={`mb-0 ${styles.solutionContent}`}>
                               {item.text1}
                             </li>
-                            <li>
+                            <li className={`${styles.solutionContent}`}>
                               {item.text2}
                             </li>
                           </ul>
@@ -766,13 +772,18 @@ const BCLandingPage: NextPage = () => {
                     <div className="self-stretch relative text-[inherit] leading-[32px] font-inherit text-greys-grey-05">
                       <ul className="m-0 pl-6 text-lg fs-16">
                         <li className="mb-0">
-                          <span className="text-greys-grey-05">{t("landingPage.developmentCost.text1.subText1")}</span>
-                          <span className="text-greys-grey-08">{t("landingPage.developmentCost.text1.subText2")}</span>
-                          <span> {t("landingPage.developmentCost.text1.subText3")}</span>
+                          {lang === 'en' && <><span className="text-greys-grey-05">{t("landingPage.developmentCost.text1.subText1")}</span>
+                            <span className="text-greys-grey-08">{t("landingPage.developmentCost.text1.subText2")}</span>
+                            <span> {t("landingPage.developmentCost.text1.subText3")}</span>
+                          </>}
+                          {lang === 'ko' && <>
+                            <p className="text-greys-grey-05 my-0">{t("landingPage.developmentCost.text1.subText1")}</p>
+                            <b className="text-greys-grey-05 mt-[5px]">{t("landingPage.developmentCost.text1.subText2")} <b className="text-primary-purple-06"> {t("landingPage.developmentCost.text1.subText3")}</b></b>
+                          </>}
                         </li>
                         <li>
                           <span>{t("landingPage.developmentCost.text2.subText1")}</span>
-                          <span className="text-greys-grey-08">{t("landingPage.developmentCost.text2.subText2")}</span>
+                          {lang === "ko" ? <b className="text-primary-purple-06">{t("landingPage.developmentCost.text2.subText2")}</b> : <span className="text-greys-grey-08">{t("landingPage.developmentCost.text2.subText2")}</span>}
                           <span className="text-greys-grey-05">
                             {" "}
                             {t("landingPage.developmentCost.text2.subText3")}
@@ -951,7 +962,15 @@ const BCLandingPage: NextPage = () => {
           <div className="text-center pb-[84px] px-[24px]">
             <div className="text-center gap-[6px]">
               <div className="leading-[32px] text-[24px] fs-18">
-                <span>{t("landingPage.faq.mainTitle")}</span>
+                {lang === 'en' && <>
+                  <span>{translatedText.slice(0, translatedText.indexOf("Get in Touch"))}</span>
+                  <strong onClick={() => setForm(true)}>{translatedText.slice(translatedText.indexOf("Get in Touch"))}</strong>
+                </>}
+                {lang === 'ko' && <>
+                  {parts[0]}
+                  <span onClick={() => setForm(true)}>{boldPart}</span>
+                  {parts[1]}
+                </>}
               </div>
               <div className="self-stretch relative text-29xl leading-[56px] font-medium text-gray-900 fs-32">
                 {t("landingPage.faq.title")}

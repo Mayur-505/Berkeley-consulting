@@ -21,13 +21,13 @@
     },
     "solution1": {
       "title": "개발 관련 피드백 및 소통의 어려움",
-      "subTitle": "첫 번째 솔루션",
+      "subTitle": "# 언제나 빠른 피드백",
       "text1": "버컨의 빠르고 친절한 피드백",
       "text2": "고객만족도 100%를 실현하는 차별화된 서비스 제공"
     },
     "solution2": {
-      "title": "의사소통 또는 피드백 문제",
-      "subTitle": "두 번째 솔루션",
+      "title": "높은 비용 대비 낮은 퀄리티",
+      "subTitle": "#  비용 걱정은 그만!",
       "text1": "무제한 설계 수정 및 작업/비용 분할",
       "text2": "저렴한 월간 컨설팅 비용 및 무엇이든 가능한 액션 플랜 제공"
     },
@@ -55,13 +55,13 @@
       "subTitle": "비용 걱정은 덜고, 높은 퀄리티를 경험해보세요!",
       "text1": {
         "subText1": "1개의 서비스 제작 시 필요한 인력 4명",
-        "subText2": "전문가 평균 연봉 3천 500만원",
-        "subText3": "4 people to create 1 service"
+        "subText2": "⇒ 전문가 평균 연봉",
+        "subText3": "3천 500만원"
       },
       "text2": {
-        "subText1": "글로벌 개발팀과 함께 외주 개발 비용",
+        "subText1": "글로벌 개발팀과 함께 외주 개발 비용\n",
         "subText2": "1/2 절감",
-        "subText3": "with a global development team"
+        "subText3": ""
       }
     },
     "wage": "인건비",

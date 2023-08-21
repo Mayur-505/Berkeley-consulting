@@ -1,10 +1,12 @@
 import { Grid } from '@mui/material'
-import React from 'react'
+import React, { useContext } from 'react'
 import { useTranslation } from 'react-i18next'
 import styles from './footer.module.css'
+import LanguageContext from '@/context/language'
 
 const Footer = () => {
   const { t } = useTranslation()
+  const { lang } = useContext(LanguageContext)
   return (
     <div className="bg-white flex flex-col px-0 pb-0 items-center justify-start relative text-left text-base text-white font-general-sans">
       <div className="container z-[2]">
@@ -12,7 +14,7 @@ const Footer = () => {
           <div className={`flex flex-wrap items-center justify-between ${styles.footerbannerinner}`}>
             <div className="flex flex-col items-start justify-start">
               <b className="relative leading-[40px] inline-block max-w-[555px]">
-                <p className="m-0">{t("footer.banner.title")}</p>
+                <p className={`m-0 ${lang === 'ko' ? "font-light" : ""}`}>{t("footer.banner.title")}</p>
                 <p className="m-0">{t("footer.banner.text")} 😁</p>
               </b>
             </div>
@@ -31,8 +33,8 @@ const Footer = () => {
       </div>
       <div className={`${styles.footerMenu}`}>
         <div className="container mx-auto">
-          <Grid item xs={12} container spacing={4} className='px-[20px]'>
-            <Grid item lg={4} md={12} sm={12} xs={12}>
+          <Grid item xs={12} container spacing={4} className='px-[20px] justify-between'>
+            {lang === 'en' && <Grid item lg={4} md={12} sm={12} xs={12}>
               <div className="flex flex-col items-start justify-start mb-[20px]">
                 <div className="flex flex-col items-start justify-start gap-[16px]">
                   <div className="relative leading-[24px] inline-block w-[296px] opacity-[0.8]">{t("footer.text")}</div>
@@ -43,8 +45,20 @@ const Footer = () => {
                   />
                 </div>
               </div>
-            </Grid>
-            <Grid item lg={2} md={3} sm={6} xs={12}>
+            </Grid>}
+            {lang === 'ko' && <Grid item lg={4} md={6} sm={12} xs={12}>
+              <div className="flex flex-col items-start justify-start mb-[20px]">
+                <div className="flex flex-col items-start justify-start gap-[16px]">
+                  <div className="relative leading-[24px] inline-block w-[296px] opacity-[0.8]">{t("footer.text")}</div>
+                  <img
+                    className="relative w-[136px] h-[50px] object-cover"
+                    alt=""
+                    src="/berkeleyconsulting-logo-02-1@2x.png"
+                  />
+                </div>
+              </div>
+            </Grid>}
+            {lang === 'en' && <> <Grid item lg={2} md={3} sm={6} xs={12}>
               <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
                 <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block h-[26px] shrink-0">
                   {t("footer.company.title")}
@@ -65,69 +79,113 @@ const Footer = () => {
                 </div>
               </div>
             </Grid>
-            <Grid item lg={2} md={3} sm={6} xs={12}>
-              <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
-                <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block h-[26px] shrink-0">
-                  {t("footer.service.title")}
-                </div>
-                <div className="flex flex-col items-start justify-start gap-[16px] opacity-[0.8] text-base">
-                  <div className="relative tracking-[0.02em] leading-[24px]">
-                    {t("footer.service.text1")}
+              <Grid item lg={2} md={3} sm={6} xs={12}>
+                <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
+                  <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block h-[26px] shrink-0">
+                    {t("footer.service.title")}
                   </div>
-                  <div className="relative tracking-[0.02em] leading-[24px]">
-                    {t("footer.service.text2")}
-                  </div>
-                  <div className="relative tracking-[0.02em] leading-[24px]">
-                    {t("footer.service.text3")}
-                  </div>
-                  <div className="relative tracking-[0.02em] leading-[24px]">
-                    {t("footer.service.text4")}
-                  </div>
-                </div>
-              </div>
-            </Grid>
-            <Grid item lg={2} md={3} sm={6} xs={12}>
-              <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
-                <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block h-[26px] shrink-0">
-                  {t("footer.support.title")}
-                </div>
-                <div className="flex flex-col items-start justify-start gap-[16px] opacity-[0.8] text-base">
-                  <div className="relative tracking-[0.02em] leading-[24px]">
-                    {t("footer.support.text1")}
-                  </div>
-                  <div className="relative tracking-[0.02em] leading-[24px]">
-                    {t("footer.support.text2")}
-                  </div>
-                  <div className="relative tracking-[0.02em] leading-[24px]">
-                    {t("footer.support.text3")}
-                  </div>
-                  <div className="relative tracking-[0.02em] leading-[24px]">
-                    {t("footer.support.text4")}
+                  <div className="flex flex-col items-start justify-start gap-[16px] opacity-[0.8] text-base">
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.service.text1")}
+                    </div>
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.service.text2")}
+                    </div>
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.service.text3")}
+                    </div>
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.service.text4")}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Grid>
-            <Grid item lg={2} md={3} sm={6} xs={12}>
-              <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
-                <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block h-[26px] shrink-0">
-                  {t("footer.help.title")}
+              </Grid>
+              <Grid item lg={2} md={3} sm={6} xs={12}>
+                <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
+                  <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block h-[26px] shrink-0">
+                    {t("footer.support.title")}
+                  </div>
+                  <div className="flex flex-col items-start justify-start gap-[16px] opacity-[0.8] text-base">
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.support.text1")}
+                    </div>
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.support.text2")}
+                    </div>
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.support.text3")}
+                    </div>
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.support.text4")}
+                    </div>
+                  </div>
                 </div>
-                <div className="flex flex-col items-start justify-start gap-[16px] opacity-[0.8] text-base">
-                  <div className="relative tracking-[0.02em] leading-[24px]">
-                    {t("footer.help.text1")}
+              </Grid>
+              <Grid item lg={2} md={3} sm={6} xs={12}>
+                <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
+                  <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block h-[26px] shrink-0">
+                    {t("footer.help.title")}
                   </div>
-                  <div className="relative tracking-[0.02em] leading-[24px]">
-                    {t("footer.help.text2")}
-                  </div>
-                  <div className="relative tracking-[0.02em] leading-[24px]">
-                    {t("footer.help.text3")}
-                  </div>
-                  <div className="relative tracking-[0.02em] leading-[24px]">
-                    {t("footer.help.text4")}
+                  <div className="flex flex-col items-start justify-start gap-[16px] opacity-[0.8] text-base">
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.help.text1")}
+                    </div>
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.help.text2")}
+                    </div>
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.help.text3")}
+                    </div>
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.help.text4")}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Grid>
+              </Grid></>}
+            {lang === 'ko' && <Grid item  lg={8} md={6} sm={12} xs={12} container spacing={4} className='justify-end'>
+              <Grid item lg={3} md={5} sm={6} xs={12}>
+                <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
+                  <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block h-[26px] shrink-0">
+                    {t("footer.service.title")}
+                  </div>
+                  <div className="flex flex-col items-start justify-start gap-[16px] opacity-[0.8] text-base">
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.service.text1")}
+                    </div>
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.service.text2")}
+                    </div>
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.service.text3")}
+                    </div>
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.service.text4")}
+                    </div>
+                  </div>
+                </div>
+              </Grid>
+              <Grid item lg={3} md={5} sm={6} xs={12}>
+                <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
+                  <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block h-[26px] shrink-0">
+                    {t("footer.service.title")}
+                  </div>
+                  <div className="flex flex-col items-start justify-start gap-[16px] opacity-[0.8] text-base">
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.service.text1")}
+                    </div>
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.service.text2")}
+                    </div>
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.service.text3")}
+                    </div>
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.service.text4")}
+                    </div>
+                  </div>
+                </div>
+              </Grid>
+            </Grid>}
           </Grid>
         </div>
       </div>
