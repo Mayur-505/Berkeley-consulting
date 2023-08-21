@@ -237,29 +237,29 @@
     },
     "text": "외주 개발이 아닌, 비즈니스를 함께하는 버클리 컨설팅 입니다.",
     "company": {
-      "title": "버클리 컨설팅",
-      "text1": "블로그",
+      "title": "Company",
+      "text1": "소개",
       "text2": "Careers",
       "text3": "Our Blog",
       "text4": "Contact Us"
     },
     "service": {
-      "title": "회사 소개",
-      "text1": "문의하기",
+      "title": "Services",
+      "text1": "개발 프로세스",
       "text2": "Customers",
       "text3": "Pricing",
       "text4": "Help Center"
     },
     "support": {
-      "title": "CEO 소개",
-      "text1": "Terms of Use",
+      "title": "Support",
+      "text1": "안내 사항",
       "text2": "Privacy Policy",
       "text3": "Cookie Policy",
       "text4": "Site Map"
     },
     "help": {
-      "title": "Help Center",
-      "text1": "Community",
+      "title": "Berkeley Cousulting",
+      "text1": "블로그",
       "text2": "Knowledge Base",
       "text3": "Academy",
       "text4": "Support"
