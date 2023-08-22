@@ -37,7 +37,7 @@ export default async function handler(request: NextApiRequest, res: NextApiRespo
   });
   try {
     let data = await transporter.sendMail({
-      from: 'help@berkeley.io <berkeley@gmail.com>',
+      from: 'hello@berkeley.consulting <berkeley@gmail.com>',
       to: email,
       subject: 'Welcome to berkeley',
       html: html
