@@ -44,20 +44,6 @@ export const Form = ({ className, buttonIcon = <Arrow1 className="arrow" /> }: P
       <br>
       `
     }
-    // try {
-    //   const response = await fetch('/api/email', {
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify(userData),
-    //   });
-
-    //   const data = await response.json();
-    //   console.log(data); // Response from the API
-    // } catch (error) {
-    //   console.error('Error sending email:', error);
-    // }
 
     // for key in user
     await axios.post("/api/email", {
