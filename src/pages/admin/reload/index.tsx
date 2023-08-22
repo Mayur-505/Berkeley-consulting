@@ -38,6 +38,7 @@ const Index = () => {
     };
 
     const write = async (data: any) => {
+        console.log('data', data)
         try {
             let response = {}
             const writePromises = Object.keys(data).map(async (key) => {
@@ -47,7 +48,8 @@ const Index = () => {
             await Promise.all(writePromises);
             toast("Translation fetched successfully!")
             setLoader(false)
-            localStorage.setItem("translation", JSON.stringify(response))
+            console.log('data[key', data["en"])
+            localStorage.setItem("translation", JSON.stringify(data["en"]))
             window.reload()
         } catch (err) {
             throw err;
