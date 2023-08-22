@@ -22,27 +22,27 @@ import useLocalStorage from '@/hooks/useLocalStorage';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { i18n } = useTranslation()
-  const [language, setLanguage] = useState("en")
+  const [language, setLanguage] = useState("ko")
   const [value] = useLocalStorage("translation", "", false)
   const [lang, setLang] = useLocalStorage("language", "", true)
 
   useEffect(() => {
     const translation = JSON.parse(localStorage.getItem("translation"))
-    i18n.changeLanguage(language || "en")
+    i18n.changeLanguage(language || "ko")
   }, [])
   useEffect(() => {
     if (lang !== "") {
       setLanguage(lang)
-      i18n.changeLanguage(lang || "en")
+      i18n.changeLanguage(lang || "ko")
     } else {
-      setLanguage("en")
+      setLanguage("ko")
     }
   }, [lang])
   useEffect(() => {
-    if (value?.en)
+    if (value?.ko)
       i18ns.init({
-        lng: 'en',
-        fallbackLng: 'en',
+        lng: 'ko',
+        fallbackLng: 'ko',
         resources: {
           en: {
             translation: value?.en,

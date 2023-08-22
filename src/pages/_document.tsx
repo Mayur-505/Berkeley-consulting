@@ -11,35 +11,32 @@ export default function Document({
   children: React.ReactNode
 }) {
   const { i18n } = useTranslation()
-  const [language, setLanguage] = useState("en")
+  const [language, setLanguage] = useState("ko")
   const [value] = useLocalStorage("translation", "", false)
   const [lang, setLang] = useLocalStorage("language", "", true)
   useEffect(() => {
     const translation = JSON.parse(localStorage.getItem("translation"))
-    i18n.changeLanguage(localStorage.getItem("language") || "en")
+    i18n.changeLanguage(localStorage.getItem("language") || "ko")
   }, [])
   useEffect(() => {
     if (lang) {
       setLanguage(lang)
-      i18n.changeLanguage(lang || "en")
+      i18n.changeLanguage(lang || "ko")
     } else {
-      setLanguage("en")
+      setLanguage("ko")
     }
   }, [lang])
   useEffect(() => {
     if (value?.en)
       i18ns.init({
-        lng: 'en',
-        fallbackLng: 'en',
+        lng: 'ko',
+        fallbackLng: 'ko',
         resources: {
           en: {
             translation: value?.en,
           },
           ko: {
             translation: value?.ko,
-          },
-          chi: {
-            translation: value?.chi,
           }
         },
         interpolation: {
