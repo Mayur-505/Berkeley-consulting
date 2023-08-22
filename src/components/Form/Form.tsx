@@ -135,7 +135,7 @@ export const Form = ({ className, buttonIcon = <Arrow1 className="arrow" /> }: P
           </div>
         </div>
         <div className="flex justify-center mt-[30px]">
-          <button className="flex items-center bg-[#2563EB] border-none px-[30px] py-[15px] rounded-[30px] text-white">
+          <button className="flex items-center bg-[#2563EB] border-none px-[30px] py-[15px] rounded-[30px] text-white cursor-pointer">
             <div className="text-[18px] me-3">
               Submit Now
             </div>

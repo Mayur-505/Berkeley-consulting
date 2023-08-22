@@ -964,7 +964,7 @@ const BCLandingPage: NextPage = () => {
               <div className="leading-[32px] text-[24px] fs-18">
                 {lang === 'en' && <>
                   <span>{translatedText.slice(0, translatedText.indexOf("Get in Touch"))}</span>
-                  <strong onClick={() => setForm(true)}>{translatedText.slice(translatedText.indexOf("Get in Touch"))}</strong>
+                  <strong onClick={() => setForm(true)} className="cursor-pointer">{translatedText.slice(translatedText.indexOf("Get in Touch"))}</strong>
                 </>}
                 {lang === 'ko' && <>
                   {parts[0]}
@@ -983,7 +983,7 @@ const BCLandingPage: NextPage = () => {
             </div>
           </div>
         </div>
-        <Footer />
+        <Footer onClick={() => setForm(true)} />
       </div >
     </>
   );

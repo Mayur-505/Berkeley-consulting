@@ -4,7 +4,11 @@ import { useTranslation } from 'react-i18next'
 import styles from './footer.module.css'
 import LanguageContext from '@/context/language'
 
-const Footer = () => {
+interface FooterProps {
+  onClick?: boolean
+}
+
+const Footer: React.FC<FooterProps> = ({ onClick }) => {
   const { t } = useTranslation()
   const { lang } = useContext(LanguageContext)
   return (
@@ -18,7 +22,7 @@ const Footer = () => {
                 <p className="m-0">{t("footer.banner.text")} 😁</p>
               </b>
             </div>
-            <div className={`rounded-35xl bg-greys-grey-01 overflow-hidden flex flex-row py-4 px-[30px] items-center justify-start gap-[14px] text-center text-lg text-greys-grey-10 ${styles.quoteButton}`}>
+            <div className={`rounded-35xl bg-greys-grey-01 overflow-hidden flex flex-row py-4 px-[30px] items-center justify-start gap-[14px] text-center text-lg text-greys-grey-10 cursor-pointer ${styles.quoteButton}`} onClick={onClick}>
               <div className="relative tracking-[0.02em] leading-[24px] font-medium">
                 {t("footer.banner.button")}
               </div>
@@ -142,11 +146,11 @@ const Footer = () => {
                   </div>
                 </div>
               </Grid></>}
-            {lang === 'ko' && <Grid item  lg={8} md={6} sm={12} xs={12} container spacing={4} className='justify-end'>
+            {lang === 'ko' && <Grid item lg={8} md={6} sm={12} xs={12} container spacing={4} className='justify-end'>
               <Grid item lg={3} md={5} sm={6} xs={12}>
                 <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
                   <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block h-[26px] shrink-0">
-                    {t("footer.service.title")}
+                    {t("footer.help.title")}
                   </div>
                   <div className="flex flex-col items-start justify-start gap-[16px] opacity-[0.8] text-base">
                     <div className="relative tracking-[0.02em] leading-[24px]">
@@ -154,12 +158,6 @@ const Footer = () => {
                     </div>
                     <div className="relative tracking-[0.02em] leading-[24px]">
                       {t("footer.service.text2")}
-                    </div>
-                    <div className="relative tracking-[0.02em] leading-[24px]">
-                      {t("footer.service.text3")}
-                    </div>
-                    <div className="relative tracking-[0.02em] leading-[24px]">
-                      {t("footer.service.text4")}
                     </div>
                   </div>
                 </div>
@@ -167,20 +165,17 @@ const Footer = () => {
               <Grid item lg={3} md={5} sm={6} xs={12}>
                 <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
                   <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block h-[26px] shrink-0">
-                    {t("footer.service.title")}
+                    Help Center
                   </div>
                   <div className="flex flex-col items-start justify-start gap-[16px] opacity-[0.8] text-base">
                     <div className="relative tracking-[0.02em] leading-[24px]">
                       {t("footer.service.text1")}
                     </div>
                     <div className="relative tracking-[0.02em] leading-[24px]">
-                      {t("footer.service.text2")}
+                      {t("footer.support.text1")}
                     </div>
                     <div className="relative tracking-[0.02em] leading-[24px]">
-                      {t("footer.service.text3")}
-                    </div>
-                    <div className="relative tracking-[0.02em] leading-[24px]">
-                      {t("footer.service.text4")}
+                      {t("footer.help.text1")}
                     </div>
                   </div>
                 </div>

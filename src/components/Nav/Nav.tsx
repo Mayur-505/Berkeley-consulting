@@ -81,7 +81,7 @@ const Nav = () => {
           <div className='flex flex-row items-center justify-end lg:ms-[60px] md:ms-[40px] ms-[40px]'>
             <div className="relative">
               <div className="div language-currency me-[15px] cursor-pointer items-center flex" onClick={openLanguage}>
-                <img className="img me-[5px] h-[30px] w-[40px]" alt="Vector" src={lang == 'en' ? "/image 5.svg" : "south-korea.png"} />
+                <img className="img me-[10px] h-[30px] w-[40px]" alt="Vector" src={lang == 'en' ? "/image 5.svg" : "/image 5 (1).svg"} />
                 <img className="rectangle" alt="Rectangle" src="/img/rectangle-2083.svg" />
               </div>
               {
