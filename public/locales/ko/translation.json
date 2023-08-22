@@ -239,75 +239,75 @@
     "company": {
       "title": "Company",
       "text1": "소개",
-      "text2": "Careers",
-      "text3": "Our Blog",
-      "text4": "Contact Us"
+      "text2": "채용",
+      "text3": "블로그",
+      "text4": "문의하기"
     },
     "service": {
       "title": "Services",
       "text1": "개발 프로세스",
-      "text2": "Customers",
-      "text3": "Pricing",
-      "text4": "Help Center"
+      "text2": "파트너",
+      "text3": "가격상담",
+      "text4": "헬프센터"
     },
     "support": {
       "title": "Support",
       "text1": "안내 사항",
-      "text2": "Privacy Policy",
-      "text3": "Cookie Policy",
-      "text4": "Site Map"
+      "text2": "개인정보처리방침",
+      "text3": "쿠키정책",
+      "text4": "사이트맵"
     },
     "help": {
       "title": "Berkeley Cousulting",
       "text1": "블로그",
-      "text2": "Knowledge Base",
-      "text3": "Academy",
-      "text4": "Support"
+      "text2": "블로그",
+      "text3": "교육",
+      "text4": "고객센터"
     }
   },
   "submitButton": {
-    "title": "Submit Now"
+    "title": "전송"
   },
   "form": {
     "inquiry": {
-      "title": "Inquiry",
-      "text1": "Please fill in brief service information!",
-      "text2": "It is very helpful for",
-      "text3": "quotation consultation.",
+      "title": "문의하기",
+      "text1": "내용을 최대한 작성해주세요",
+      "text2": "자세할수록 ",
+      "text3": "훨씬 빠르게 계획을 짤수 있습니다.",
       "inquiry1": {
-        "title": "What’s your project Name?",
-        "text": "Enter your project name"
+        "title": "프로젝트 이름은 무엇인가요?",
+        "text": "프로젝트 이름을 써주세요."
       },
       "inquiry2": {
-        "title": "What Do you wanna Build?",
-        "text": "Tell me about your project."
+        "title": "무엇을 만들고 싶으신가요?",
+        "text": "프로젝트에 관련해 내용을 적어주세요."
       },
       "inquiry3": {
-        "title": "What’s your Budget?",
-        "text": "$ 5,000 or $ 10,000...$ 50,000...$ 100,000........"
+        "title": "예산은 어느정도 인가요?",
+        "text": "5백만원/1천만원/5천만원/1억"
       }
     },
     "contactInfo": {
-      "title": "Contact Information",
+      "title": "연락처",
       "contactInfo1": {
-        "title": "What’s your Name?",
-        "text": "Enter your Name"
+        "title": "이름이 어떻게 되시나요?",
+        "text": "이름을 적어주세요"
       },
       "contactInfo2": {
-        "title": "What’s your Contact Num. ?",
-        "text": "Enter your Phone Number"
+        "title": "연락받으실 번호가 있으신가요?",
+        "text": "연락받으실 연락처를 적어주세요."
       },
       "contactInfo3": {
-        "title": "What’s your Email?",
-        "text": "Enter your Email address"
+        "title": "이메일이 있으신가요?",
+        "text": "이메일을 적어주세요"
       },
       "contactInfo4": {
-        "title": "What’s your Company Name ?",
-        "text": "Enter your Company Name"
+        "title": "회사를 설립하셨나요?",
+        "text": "회사이름은 무엇인가요?"
       },
       "contactInfo5": {
-        "title": "What’s your position?",
-        "text": "Enter your Previous Position"
+        "title": "직책은 무엇인가요?",
+        "text": "또는 이전 직책을 적어주세요."
       }
     }
   }

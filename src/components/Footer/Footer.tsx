@@ -169,10 +169,10 @@ const Footer: React.FC<FooterProps> = ({ onClick }) => {
                   </div>
                   <div className="flex flex-col items-start justify-start gap-[16px] opacity-[0.8] text-base">
                     <div className="relative tracking-[0.02em] leading-[24px]">
-                      {t("footer.service.text1")}
+                      {t("footer.support.text1")}
                     </div>
                     <div className="relative tracking-[0.02em] leading-[24px]">
-                      {t("footer.support.text1")}
+                      {t("footer.company.text4")}
                     </div>
                     <div className="relative tracking-[0.02em] leading-[24px]">
                       {t("footer.help.text1")}
