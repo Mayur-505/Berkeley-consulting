@@ -13,6 +13,8 @@ import Footer from "@/components/Footer/Footer";
 import { Grid } from "@mui/material";
 import useWindowSize from '@/hooks/useWindowSize';
 import LanguageContext from "@/context/language";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const settingsPortfolio = {
   dots: false,
@@ -392,6 +394,7 @@ const BCLandingPage: NextPage = () => {
             <BlurLayer />
           </PopupComponent> : null}
         </div>
+        <ToastContainer />
         <Nav />
         <div className="h-[550px]">
           <div className={`relative bg-white w-full h-[600px] text-center text-5xl text-primary-purple-05 ${styles.landingPageWrapper}`}>

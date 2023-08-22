@@ -264,5 +264,51 @@
       "text3": "Academy",
       "text4": "Support"
     }
+  },
+  "submitButton": {
+    "title": "Submit Now"
+  },
+  "form": {
+    "inquiry": {
+      "title": "Inquiry",
+      "text1": "Please fill in brief service information!",
+      "text2": "It is very helpful for",
+      "text3": "quotation consultation.",
+      "inquiry1": {
+        "title": "What’s your project Name?",
+        "text": "Enter your project name"
+      },
+      "inquiry2": {
+        "title": "What Do you wanna Build?",
+        "text": "Tell me about your project."
+      },
+      "inquiry3": {
+        "title": "What’s your Budget?",
+        "text": "$ 5,000 or $ 10,000...$ 50,000...$ 100,000........"
+      }
+    },
+    "contactInfo": {
+      "title": "Contact Information",
+      "contactInfo1": {
+        "title": "What’s your Name?",
+        "text": "Enter your Name"
+      },
+      "contactInfo2": {
+        "title": "What’s your Contact Num. ?",
+        "text": "Enter your Phone Number"
+      },
+      "contactInfo3": {
+        "title": "What’s your Email?",
+        "text": "Enter your Email address"
+      },
+      "contactInfo4": {
+        "title": "What’s your Company Name ?",
+        "text": "Enter your Company Name"
+      },
+      "contactInfo5": {
+        "title": "What’s your position?",
+        "text": "Enter your Previous Position"
+      }
+    }
   }
 }

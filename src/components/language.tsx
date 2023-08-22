@@ -24,14 +24,14 @@ const Language: NextPage<LanguageType> = ({ onClose }: any) => {
   }
   return (
     <div className={styles.language}>
-      <div className={styles.languageButton} onClick={() => handleLangUpdate("en")}>
+      {lang === 'ko' && lang !== 'en' && <div className={styles.languageButton} onClick={() => handleLangUpdate("en")}>
         <Image className={styles.flagIcon} alt="" src={Group1} />
         <div className={styles.english}>ENG</div>
-      </div>
-      <div className={styles.languageButton} onClick={() => handleLangUpdate("ko")}>
+      </div>}
+      {lang === 'en' && lang !== 'ko' && <div className={styles.languageButton} onClick={() => handleLangUpdate("ko")}>
         <Image className={styles.flagIcon} alt="" src={Group2} />
         <div className={styles.english}>KR</div>
-      </div>
+      </div>}
     </div>
   );
 };

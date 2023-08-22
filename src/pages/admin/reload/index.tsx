@@ -48,7 +48,6 @@ const Index = () => {
             await Promise.all(writePromises);
             toast("Translation fetched successfully!")
             setLoader(false)
-            console.log('data[key', data["en"])
             localStorage.setItem("translation", JSON.stringify(data["en"]))
             window.reload()
         } catch (err) {
