@@ -155,7 +155,7 @@ const BCLandingPage: NextPage = () => {
   const previous = () => {
     reviewsSlider?.current?.slickPrev();
   };
-  const reviews = [
+  let reviews = [
     {
       userName1: t("landingPage.review1.userName"),
       role1: t("landingPage.review1.role"),
@@ -217,6 +217,8 @@ const BCLandingPage: NextPage = () => {
       img1: "/kennethschippervera-ztnqa4a7pqunsplash-1@2x.png"
     }
   ]
+
+  reviews = width < 767 ? reviews.slice(0, 5) : reviews
 
   const stars = Array.from({ length: 5 }, (_, index) => (
     <img

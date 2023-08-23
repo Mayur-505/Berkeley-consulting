@@ -1,9 +1,10 @@
 import React, { useEffect, useState, useCallback, useContext } from 'react'
 import { useTranslation } from 'react-i18next'
 import styles from "./nav.module.css";
-import { useRouter } from 'next/router';
+// import { useRouter } from "next/navigation";
 import Language from '../language';
 import LanguageContext from '@/context/language';
+import { useRouter } from 'next/router';
 
 const Nav = () => {
   const { t } = useTranslation()
@@ -51,6 +52,11 @@ const Nav = () => {
     setLanguageOpen(false);
   }, []);
 
+  const onRouteChange = (path: string) => {
+    router.push(path)
+    setisActivem(false)
+  }
+
   return (
     <div className={`${styles.NavContainer} nav-main font-general-sans`}>
       <div className="container mx-[auto]">
@@ -62,19 +68,19 @@ const Nav = () => {
             onClick={() => router.push('/')}
           />
           <div className={`flex-1 flex flex-row items-center justify-end gap-[74px] ${styles.navTitle}`}>
-            <div className={`relative ${active === 0 ? "text-greys-grey-08" : "text-greys-grey-04"} hover:text-greys-grey-08 active:text-greys-grey-08 focus:text-greys-grey-08 cursor-pointer  tracking-[0.04em] leading-[24px] text-[18px] default:text-greys-grey-08`} onClick={() => setActive(0)}>
+            <div className={`relative ${router.pathname === "/solutions" ? "text-greys-grey-08" : "text-greys-grey-04"} hover:text-greys-grey-08 active:text-greys-grey-08 focus:text-greys-grey-08 cursor-pointer  tracking-[0.04em] leading-[24px] text-[18px] default:text-greys-grey-08`} onClick={() => { router.push("/solutions"); setActive(0); }}>
               {t("navBar.title1")}
             </div>
-            <div className={`relative  ${active === 1 ? "text-greys-grey-08" : "text-greys-grey-04"}  hover:text-greys-grey-08 active:text-greys-grey-08 focus:text-greys-grey-08 cursor-pointer tracking-[0.02em] leading-[24px] text-[18px]`} onClick={() => setActive(1)}>
+            <div className={`relative  ${router.pathname === "/process" ? "text-greys-grey-08" : "text-greys-grey-04"}  hover:text-greys-grey-08 active:text-greys-grey-08 focus:text-greys-grey-08 cursor-pointer tracking-[0.02em] leading-[24px] text-[18px]`} onClick={() => { router.push("/process"); setActive(1); }}>
               {t("navBar.title2")}
             </div>
-            <div className={`relative  ${active === 2 ? "text-greys-grey-08" : "text-greys-grey-04"} hover:text-greys-grey-08 active:text-greys-grey-08 focus:text-greys-grey-08 cursor-pointer tracking-[0.02em] leading-[24px] text-[18px]`} onClick={() => setActive(2)}>
+            <div className={`relative  ${router.pathname === "/portfolio" ? "text-greys-grey-08" : "text-greys-grey-04"} hover:text-greys-grey-08 active:text-greys-grey-08 focus:text-greys-grey-08 cursor-pointer tracking-[0.02em] leading-[24px] text-[18px]`} onClick={() => { router.push("/portfolio"); setActive(2); }}>
               {t("navBar.title3")}
             </div>
-            <div className={`relative ${active === 3 ? "text-greys-grey-08" : "text-greys-grey-04"}  hover:text-greys-grey-08 active:text-greys-grey-08 focus:text-greys-grey-08 cursor-pointer tracking-[0.02em] leading-[24px] text-[18px]`} onClick={() => setActive(3)}>
+            <div className={`relative ${router.pathname === "/faqs" ? "text-greys-grey-08" : "text-greys-grey-04"}  hover:text-greys-grey-08 active:text-greys-grey-08 focus:text-greys-grey-08 cursor-pointer tracking-[0.02em] leading-[24px] text-[18px]`} onClick={() => { router.push("/faqs"); setActive(3); }}>
               {t("navBar.title4")}
             </div>
-            <div className={`relative ${active === 4 ? "text-greys-grey-08" : "text-greys-grey-04"} hover:text-greys-grey-08 active:text-greys-grey-08 focus:text-greys-grey-08 cursor-pointer tracking-[0.02em] leading-[24px] text-[18px]`} onClick={() => setActive(4)}>
+            <div className={`relative ${router.pathname === "/blog" ? "text-greys-grey-08" : "text-greys-grey-04"} hover:text-greys-grey-08 active:text-greys-grey-08 focus:text-greys-grey-08 cursor-pointer tracking-[0.02em] leading-[24px] text-[18px]`} onClick={() => { router.push("/blog"); setActive(4); }}>
               {t("navBar.title5")}
             </div>
           </div>
@@ -112,7 +118,7 @@ const Nav = () => {
                 className="relative w-[156px] h-[60px] object-cover"
                 alt=""
                 src="/berkeley-consulting-logo-02@2x.png"
-                onClick={() => router.push('/')}
+                onClick={() => { router.push('/'); setisActivem(false); }}
               />
               <div onClick={() => setisActivem(false)}>
                 <img src="/img/Union (33).svg" alt="" />
@@ -120,24 +126,24 @@ const Nav = () => {
             </div>}
             <ul className="mt-[30px]">
               <li className="main-header-menu cursor-pointer">
-                <div className="text-wrapper text-[16px]" onClick={() => setActive(0)}>{t("navBar.title1")}</div>
+                <div className="text-wrapper text-[16px]" onClick={() => { onRouteChange("/solutions"); }}>{t("navBar.title1")}</div>
               </li>
               <li className="main-header-menu cursor-pointer">
                 <div className="flex items-center justify-between">
-                  <div className="text-wrapper text-[16px]" onClick={() => setActive(1)}>{t("navBar.title2")}</div>
+                  <div className="text-wrapper text-[16px]" onClick={() => { onRouteChange("/process"); }}>{t("navBar.title2")}</div>
                 </div>
               </li>
               <li className="main-header-menu cursor-pointer">
-                <div className="text-wrapper text-[16px]" onClick={() => setActive(2)}>{t("navBar.title3")}</div>
+                <div className="text-wrapper text-[16px]" onClick={() => { onRouteChange("/portfolio"); }}>{t("navBar.title3")}</div>
               </li>
               <li className="main-header-menu cursor-pointer">
                 <div className="div">
-                  <div className="text-wrapper text-[16px]" onClick={() => setActive(3)}>{t("navBar.title4")}</div>
+                  <div className="text-wrapper text-[16px]" onClick={() => { onRouteChange("/faqs"); }}>{t("navBar.title4")}</div>
                 </div>
               </li>
               <li className="main-header-menu cursor-pointer">
                 <div className="div">
-                  <div className="text-wrapper text-[16px]" onClick={() => setActive(4)}>{t("navBar.title5")}</div>
+                  <div className="text-wrapper text-[16px]" onClick={() => { onRouteChange("/blog"); }}>{t("navBar.title5")}</div>
                 </div>
               </li>
             </ul>

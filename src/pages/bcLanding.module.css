@@ -188,7 +188,8 @@
     width: 121px;
   }
   .devCostSave {
-    left: 265px;
+    left: 280px;
+    width: fit-content;
   }
   .devCostEllipse {
     left: 150px;
