@@ -75,62 +75,138 @@ const reducer = (state: any, action: any) => {
 
 
 
-function FAQComponent() {
+function FAQComponent(props: any) {
   const { t } = useTranslation()
+  const { lang } = useContext(LanguageContext)
   const [state, dispatch] = useReducer(reducer, { openFaq: ["faq1"] })
+
+  const translatedText1 = t("landingPage.faq1.answer");
+  const [firstPart1, secondPart1, ...remainingParts] = translatedText1.split(".");
+
+  const translatedText2 = t("landingPage.faq2.answer");
+  const [firstPart2, secondPart2, ...remainingParts2] = translatedText2.split(".");
+
+  const translatedText3 = t("landingPage.faq3.answer");
+  const [firstPart3] = translatedText3.split(".");
+
+  const translatedText4 = t("landingPage.faq4.answer");
+  const [firstPart4, secondPart4] = translatedText4.split(".");
+
+  const translatedText5 = t("landingPage.faq5.answer");
+  const [firstPart5, secondPart5, ...remainingParts5] = translatedText5.split(".");
+
+  var partmain;
+  {
+    remainingParts.map((part, index) => (
+      partmain = part.trim()
+    ))
+  }
+  const part = lang === 'ko' && partmain.split("여기");
+  const boldPart = part.length > 1 ? <span>여기</span> : "여기";
+
+  var partmain2;
+  {
+    remainingParts2.map((part, index) => (
+      partmain2 = part.trim()
+    ))
+  }
+  const part2 = lang === 'ko' && partmain2.split("여기");
+
+  const part3 = lang === 'ko' && firstPart3.split("여기");
+
+  const part5 = lang === 'ko' && firstPart5.split("여기");
 
   const faqArray = [
     {
       question: t("landingPage.faq1.question"),
-      answer: t("landingPage.faq1.answer"),
+      answer: firstPart1,
+      answer2: secondPart1,
+      part: part[0],
+      part2: part[1],
+      asweren: t("landingPage.faq1.answer"),
+      remainingParts: remainingParts,
       key: "faq1"
     },
     {
       question: t("landingPage.faq2.question"),
-      answer: t("landingPage.faq2.answer"),
+      answer: firstPart2,
+      answer2: secondPart2,
+      part: part2[0],
+      part2: part2[1],
+      asweren: t("landingPage.faq2.answer"),
       key: "faq2"
     },
     {
       question: t("landingPage.faq3.question"),
-      answer: t("landingPage.faq3.answer"),
+      answer: "",
+      answer2: "",
+      part: part3[0],
+      part2: part3[1],
+      asweren: t("landingPage.faq3.answer"),
       key: "faq3"
     },
     {
       question: t("landingPage.faq4.question"),
-      answer: t("landingPage.faq4.answer"),
+      answer: firstPart4,
+      answer2: secondPart4,
+      part: "",
+      part2: "",
+      asweren: t("landingPage.faq4.answer"),
       key: "faq4"
     },
     {
       question: t("landingPage.faq5.question"),
-      answer: t("landingPage.faq5.answer"),
+      answer: "",
+      answer2: "",
+      part: part5[0],
+      part2: part5[1],
+      asweren: t("landingPage.faq5.answer"),
       key: "faq5"
     }
   ]
+
   return (
     <>
       {faqArray.map((faq, index) => {
         return <div key={index} className={`self-stretch flex flex-col items-center justify-start border-solid ${index === faqArray?.length - 1 ? "border-b-0" : "border-b-1"} lg:w-[900px] md:w-[600px] w-full border-gray-200 border-r-0 border-l-0 border-t-0`}>
           <div className="self-stretch flex flex-row items-start justify-start gap-[24px] pb-4">
             <div className="flex flex-col pt-0.5 px-0 pb-0 items-start justify-start">
-
-              {state?.openFaq?.includes(faq?.key) ? <img className="relative w-6 h-6 overflow-hidden shrink-0" alt="" src="/minuscircle.svg" onClick={() => dispatch(faq?.key)} /> :
+              {state?.openFaq?.includes(faq?.key) ? <img className="relative w-6 h-6 overflow-hidden shrink-0 cursor-pointer" alt="" src="/minuscircle.svg" onClick={() => dispatch(faq?.key)} /> :
                 <img
-                  className="relative w-6 h-6 overflow-hidden shrink-0"
+                  className="relative w-6 h-6 overflow-hidden shrink-0 cursor-pointer"
                   alt=""
                   src="/pluscircle.svg"
                   onClick={() => dispatch(faq?.key)}
                 />}
             </div>
             <div className="flex-1 flex flex-col items-start justify-start gap-[8px]">
-              <div className="self-stretch relative tracking-[0.04em] leading-[28px] font-medium">
+              <div className={`self-stretch relative tracking-[0.04em] leading-[28px] font-medium ${lang === 'ko' ? "text-[#605f5f] font-bold" : ""}`}>
                 {faq?.question}
               </div>
-              {state?.openFaq?.includes(faq?.key) ? <div className="self-stretch relative text-base leading-[24px] text-greys-grey-05 pb-2">
-                {faq?.answer}
-              </div> : null}
+              {lang === 'en' && <>
+                {state?.openFaq?.includes(faq?.key) ? <div className="self-stretch relative text-base leading-[24px] text-greys-grey-05">
+                  {faq?.asweren}
+                </div> : null}
+              </>}
+              {lang === 'ko' && <>
+                {state?.openFaq?.includes(faq?.key) && faq?.answer !== "" ? <div className="self-stretch relative text-base leading-[15px] text-black font-bold">
+                  {faq?.answer} .
+                </div> : null}
+                {state?.openFaq?.includes(faq?.key) && faq?.answer2 !== "" ? <div className="self-stretch relative text-base leading-[15px] text-black font-bold pb-2">
+                  {faq?.answer2} .
+                </div> : null}
+                {state?.openFaq?.includes(faq?.key) ? <div className="self-stretch relative text-base leading-[24px] text-greys-grey-05 pb-2">
+                  {state?.openFaq?.includes(faq?.key) ? <div>
+                    {lang === 'ko' && <>
+                      {faq?.part}
+                      {faq?.part !== "" && <span className="text-primary-purple-06 underline cursor-pointer" onClick={props.onClick}>{boldPart}</span>}
+                      {faq?.part2}
+                    </>}
+                  </div> : null}
+                </div> : null}
+              </>}
             </div>
           </div>
-
         </div>
       })}
 
@@ -388,6 +464,9 @@ const BCLandingPage: NextPage = () => {
   const parts = translatedText.split("여기");
   const boldPart = parts.length > 1 ? <strong>여기</strong> : "여기";
 
+  const devCosttranslatedText = t("landingPage.developmentCost.subTitle");
+  const [firstPart, secondPart] = devCosttranslatedText.split(",");
+
   return (
     <>
       <div className={`bg-white font-general-sans`}>
@@ -404,7 +483,7 @@ const BCLandingPage: NextPage = () => {
               <div className="pt-6 pb-[100px] items-center max-w-[100%] text-left text-lg text-greys-grey-04">
                 <div className="flex flex-col items-center justify-start gap-[54px] z-[1] text-center text-53xl text-greys-grey-10">
                   <div className="flex flex-col items-center justify-start relative gap-[24px]">
-                    <div className="self-stretch relative leading-[88px] lineHeight77 font-medium fs-40 whitespace-pre-wrap z-[0]">
+                    <div className={`self-stretch relative leading-[88px] lineHeight77 fs-40 whitespace-pre-wrap z-[0] ${width < 767 ? "font-bold" : "font-medium"}`}>
                       <p className="m-0">{t("landingPage.title1")}</p>
                       <p className="m-0">{t("landingPage.title2")}</p>
                     </div>
@@ -770,9 +849,13 @@ const BCLandingPage: NextPage = () => {
                   </div>
                 </Grid>
                 <Grid item lg={6} md={6} sm={12} xs={12}>
-                  <div className={`max-w-[486px] flex flex-col py-0 pr-12 pl-0 box-border items-start justify-start gap-[32px] text-left text-greys-grey-08 ${styles.devCostRightConner}`}>
+                  <div className={` flex flex-col py-0 pl-0 pr-12 box-border items-start justify-start gap-[32px] text-left text-greys-grey-08 ${styles.devCostRightConner} ${lang === 'ko' ? "max-w-[570px]" : "max-w-[486px]"}`}>
                     <div className="self-stretch relative leading-[48px] font-medium fs-32">
-                      {t("landingPage.developmentCost.subTitle")}
+                      {lang === 'en' && t("landingPage.developmentCost.subTitle")}
+                      {lang === 'ko' && <>
+                        <div>{firstPart},</div>
+                        <div>{secondPart}</div>
+                      </>}
                     </div>
                     <div className="self-stretch relative text-[inherit] leading-[32px] font-inherit text-greys-grey-05">
                       <ul className="m-0 pl-6 text-lg fs-16">
@@ -984,7 +1067,7 @@ const BCLandingPage: NextPage = () => {
           </div>
           <div className="max-w-[1240px] mx-[auto] flex flex-col py-0 px-8 box-border items-center justify-start text-left text-lg text-greys-grey-08">
             <div className="flex flex-col items-start justify-start gap-[20px]">
-              <FAQComponent />
+              <FAQComponent onClick={() => setForm(true)} />
             </div>
           </div>
         </div>

@@ -148,9 +148,9 @@ const Footer: React.FC<FooterProps> = ({ onClick }) => {
               </Grid></>}
             {lang === 'ko' && <Grid item lg={8} md={6} sm={12} xs={12} container spacing={4} className='justify-end'>
               <Grid item lg={3} md={5} sm={6} xs={12}>
-                <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
+              <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
                   <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block h-[26px] shrink-0">
-                    {t("footer.help.title")}
+                    {t("footer.service.title")}
                   </div>
                   <div className="flex flex-col items-start justify-start gap-[16px] opacity-[0.8] text-base">
                     <div className="relative tracking-[0.02em] leading-[24px]">
@@ -159,23 +159,32 @@ const Footer: React.FC<FooterProps> = ({ onClick }) => {
                     <div className="relative tracking-[0.02em] leading-[24px]">
                       {t("footer.service.text2")}
                     </div>
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.service.text3")}
+                    </div>
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.service.text4")}
+                    </div>
                   </div>
                 </div>
               </Grid>
               <Grid item lg={3} md={5} sm={6} xs={12}>
-                <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
+              <div className="flex flex-col items-start justify-start gap-[24px] mb-[20px]">
                   <div className="relative tracking-[0.04em] leading-[28px] font-medium inline-block h-[26px] shrink-0">
-                    Help Center
+                    {t("footer.service.title")}
                   </div>
                   <div className="flex flex-col items-start justify-start gap-[16px] opacity-[0.8] text-base">
                     <div className="relative tracking-[0.02em] leading-[24px]">
-                      {t("footer.support.text1")}
+                      {t("footer.service.text1")}
                     </div>
                     <div className="relative tracking-[0.02em] leading-[24px]">
-                      {t("footer.company.text4")}
+                      {t("footer.service.text2")}
                     </div>
                     <div className="relative tracking-[0.02em] leading-[24px]">
-                      {t("footer.help.text1")}
+                      {t("footer.service.text3")}
+                    </div>
+                    <div className="relative tracking-[0.02em] leading-[24px]">
+                      {t("footer.service.text4")}
                     </div>
                   </div>
                 </div>
