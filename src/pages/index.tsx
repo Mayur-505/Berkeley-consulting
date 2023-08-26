@@ -711,7 +711,7 @@ const BCLandingPage: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="container mx-auto py-[100px] items-center justify-start">
+        <div className="container mx-auto py-[100px] items-center justify-start" id="solutions">
           <div className="flex flex-col items-center justify-start gap-[84px] text-primary-purple-06 text-center">
             <div className="items-center justify-start gap-[4px] px-[24px]">
               <div className="self-stretch relative leading-[32px] text-[24px] fs-18">
@@ -923,7 +923,7 @@ const BCLandingPage: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col py-[100px] items-center justify-start gap-[84px] text-primary-purple-06 text-center">
+        <div className="flex flex-col py-[100px] items-center justify-start gap-[84px] text-primary-purple-06 text-center" id="process">
           <div className="relative flex items-center px-[24px]">
             <span className="w-full">
               <p className="m-0 leading-[32px] text-[24px] fs-18">{t("landingPage.devProcess.mainTitle")}</p>
@@ -1008,7 +1008,7 @@ const BCLandingPage: NextPage = () => {
             </Slider>
           </div>
         </div>
-        <div className="container mx-[auto] py-[100px] text-29xl text-black">
+        <div className="container mx-[auto] py-[100px] text-29xl text-black" id="portfolio">
           <div className="text-37xl text-greys-grey-09 font-heading-3-medium">
             <div className="leading-[64px] font-medium text-center pb-[84px] fs-32">
               {t("landingPage.portfolio.title")}
@@ -1046,7 +1046,7 @@ const BCLandingPage: NextPage = () => {
             })}
           </Grid>
         </div>
-        <div className="container mx-[auto] pt-[100px] pb-[200px] px-0 text-primary-purple-06">
+        <div className="container mx-[auto] pt-[100px] pb-[200px] px-0 text-primary-purple-06" id="faqs">
           <div className="text-center pb-[84px] px-[24px]">
             <div className="text-center gap-[6px]">
               <div className="leading-[32px] text-[24px] fs-18">
