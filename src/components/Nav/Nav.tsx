@@ -21,7 +21,7 @@ const Nav = () => {
   const [isLanguageOpen, setLanguageOpen] = useState(false);
   const { lang } = useContext(LanguageContext);
   const [idS, setIds] = useState("");
-  const [form, setForm] = useState(false)
+  const [form, setForm] = useState(false);
 
   const toggleHandler = () => {
     setisActivem(!isActivem);
@@ -66,11 +66,35 @@ const Nav = () => {
     const idParts = id.split("-");
     const targetId = idParts[0];
     setIds(targetId);
-    if (element) {
-      width < 991
-        ? (element.style.paddingTop = "170px")
-        : (element.style.paddingTop = "270px");
+    if (id === "solutions") {
+      const developmentElement = document.getElementById("development");
+      if (developmentElement) {
+        setTimeout(() => {
+          developmentElement.scrollIntoView({ behavior: "smooth" });
+        }, 2000);
+      }
     }
+    if (id === "development") {
+      const techStackElement = document.getElementById("techStack");
+      if (techStackElement) {
+        setTimeout(() => {
+          techStackElement.scrollIntoView({ behavior: "smooth" });
+        }, 2000);
+      }
+    }
+    if (id === "process") {
+      const reviewsElement = document.getElementById("reviews");
+      if (reviewsElement) {
+        setTimeout(() => {
+          reviewsElement.scrollIntoView({ behavior: "smooth" });
+        }, 2000);
+      }
+    }
+    // if (element) {
+    //   width < 991
+    //     ? (element.style.paddingTop = "170px")
+    //     : (element.style.paddingTop = "270px");
+    // }
   };
 
   return (

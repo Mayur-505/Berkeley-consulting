@@ -813,7 +813,7 @@ const BCLandingPage: NextPage = () => {
             </p>
           </div>
         </div>
-        <div className="container mx-auto flex flex-col py-[100px] items-center justify-start gap-[84px] text-primary-purple-06 text-center">
+        <div className="container mx-auto flex flex-col py-[100px] items-center justify-start gap-[84px] text-primary-purple-06 text-center" id="development">
           <div className="relative flex items-center px-[24px]">
             <span className="w-full">
               <p className="m-0 leading-[32px] text-[24px] fs-18">{t("landingPage.developmentCost.mainTitle")}</p>
@@ -885,7 +885,7 @@ const BCLandingPage: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col py-[100px] items-center justify-start gap-[84px] text-primary-purple-06 text-center">
+        <div className="flex flex-col py-[100px] items-center justify-start gap-[84px] text-primary-purple-06 text-center" id="techStack">
           <div className="relative flex items-center">
             <span className="w-full">
               <p className="m-0 leading-[32px] text-[24px] fs-18">{t("landingPage.techStack.mainTitle")}</p>
@@ -968,7 +968,7 @@ const BCLandingPage: NextPage = () => {
             </Grid>
           </div>
         </div>
-        <div className="container mx-auto pt-[100px] text-center">
+        <div className="container mx-auto pt-[100px] text-center" id="reviews">
           <div className="self-stretch relative leading-[30px] text-29xl text-black fs-32 px-[24px]">
             {t("landingPage.reviews.title")}
           </div>
