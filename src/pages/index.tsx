@@ -895,12 +895,12 @@ const BCLandingPage: NextPage = () => {
             </span>
           </div>
           <div className="container mx-auto flex flex-col items-start justify-start gap-[44px] text-left text-13xl text-greys-grey-09">
-            <div className="px-[24px]">
+            <div className="px-[24px]" style={{ width: '100%' }}>
               <Grid item xs={12} container spacing={4}>
                 {tackStackArr?.length > 0 && tackStackArr?.map((item: any, index: any) => {
                   return <Grid item lg={4} md={6} sm={6} xs={12} key={index}>
-                    <div className="flex-1 flex flex-col items-start justify-start mb-[30px]">
-                      <div className="self-stretch flex flex-col items-start justify-start gap-[16px]">
+                    <div className="items-start justify-start mb-[30px]">
+                      {/* <div className="items-start justify-start gap-[16px]"> */}
                         <div className="flex flex-col items-start justify-start gap-[12px]">
                           <img
                             className="relative w-12 h-12 overflow-hidden shrink-0"
@@ -915,7 +915,7 @@ const BCLandingPage: NextPage = () => {
                         <div className="relative text-lg tracking-[0.02em] leading-[24px] text-greys-grey-07 opacity-[0.5]">
                           {item.content}
                         </div>
-                      </div>
+                      {/* </div> */}
                     </div>
                   </Grid>
                 })}

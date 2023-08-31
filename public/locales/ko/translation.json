@@ -72,34 +72,34 @@
       "mainTitle": "수많은 개발 경험을 고려한",
       "title": "버컨이 채택한 기술 스택",
       "card1": {
-        "title1": "10 years of experience",
-        "title2": "in furniture business",
-        "text": "We’re already established since 2012, and in 10 years we have lots of positive\n reviews and achievements"
+        "title1": "서버",
+        "title2": "Nodejs",
+        "text": "개발자 수급이 제일 쉬운 노드JS를 사용합니다."
       },
       "card2": {
         "title1": "Afforable price with",
-        "title2": "world class quality",
-        "text": "Our craftsmen have lots of experience dealing with crafting furnitures and some \nof them have world class quality"
+        "title2": "1",
+        "text": "11"
       },
       "card3": {
-        "title1": "Bring your ideas into",
-        "title2": "a living product",
-        "text": "Besides you can buy the existing product, you can also consultate with us also \nto make your dream furniture"
+        "title1": "2",
+        "title2": "3",
+        "text": "12"
       },
       "card4": {
-        "title1": "10 years of experience",
-        "title2": "in furniture business",
-        "text": "We’re already established since 2012, and in 10 years we have lots of positive \nreviews and achievements"
+        "title1": "4",
+        "title2": "5",
+        "text": "13"
       },
       "card5": {
-        "title1": "Afforable price with",
-        "title2": "world class quality",
-        "text": "Our craftsmen have lots of experience dealing with crafting furnitures and some \nof them have world class quality"
+        "title1": "6",
+        "title2": "7",
+        "text": "14"
       },
       "card6": {
-        "title1": "Bring your ideas into",
-        "title2": "a living product",
-        "text": "Besides you can buy the existing product, you can also consultate with us also \nto make your dream furniture"
+        "title1": "8",
+        "title2": "9",
+        "text": "15"
       }
     },
     "devProcess": {
