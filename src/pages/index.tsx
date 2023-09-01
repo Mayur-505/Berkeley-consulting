@@ -895,7 +895,7 @@ const BCLandingPage: NextPage = () => {
             </span>
           </div>
           <div className="container mx-auto flex flex-col items-start justify-start gap-[44px] text-left text-13xl text-greys-grey-09">
-            <div className="px-[24px]" style={{ width: '100%' }}>
+            <div className="px-[24px]" style={{ width: '100% - 24px' }}>
               <Grid item xs={12} container spacing={4}>
                 {tackStackArr?.length > 0 && tackStackArr?.map((item: any, index: any) => {
                   return <Grid item lg={4} md={6} sm={6} xs={12} key={index}>
