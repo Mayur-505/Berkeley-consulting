@@ -483,7 +483,7 @@ const BCLandingPage: NextPage = () => {
               <div className="pt-6 pb-[100px] items-center max-w-[100%] text-left text-lg text-greys-grey-04">
                 <div className="flex flex-col items-center justify-start gap-[54px] z-[1] text-center text-53xl text-greys-grey-10">
                   <div className="flex flex-col items-center justify-start relative gap-[24px]">
-                    <div className={`self-stretch relative leading-[88px] lineHeight77 fs-40 whitespace-pre-wrap z-[0] ${width < 767 ? "font-bold" : "font-medium"}`}>
+                    <div className={`self-stretch relative leading-[88px] lineHeight77 fs-40 whitespace-pre-wrap z-[0] ${lang === 'ko' ? "lg:w-[600px] sm:w-[400px] w-[399px]" : ""} ${width < 767 ? "font-bold" : "font-medium"}`}>
                       <p className="m-0">{t("landingPage.title1")}</p>
                       <p className="m-0">{t("landingPage.title2")}</p>
                     </div>
@@ -923,7 +923,7 @@ const BCLandingPage: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col py-[100px] items-center justify-start gap-[84px] text-primary-purple-06 text-center" id="process">
+        <div className="flex flex-col py-[100px] items-center justify-start gap-[84px] text-primary-purple-06 text-center" id="processNav">
           <div className="relative flex items-center px-[24px]">
             <span className="w-full">
               <p className="m-0 leading-[32px] text-[24px] fs-18">{t("landingPage.devProcess.mainTitle")}</p>

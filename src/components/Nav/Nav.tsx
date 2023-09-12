@@ -82,7 +82,7 @@ const Nav = () => {
         }, 2000);
       }
     }
-    if (id === "process") {
+    if (id === "processNav") {
       const reviewsElement = document.getElementById("reviews");
       if (reviewsElement) {
         setTimeout(() => {
@@ -130,12 +130,12 @@ const Nav = () => {
               </div>
               <div
                 className={`relative  ${
-                  idS === "process"
+                  idS === "processNav"
                     ? "text-greys-grey-08"
                     : "text-greys-grey-04"
                 }  hover:text-greys-grey-08 active:text-greys-grey-08 focus:text-greys-grey-08 cursor-pointer tracking-[0.02em] leading-[24px] text-[18px]`}
                 onClick={() => {
-                  OnClickViewOnTop("process");
+                  OnClickViewOnTop("processNav");
                 }}
               >
                 {t("navBar.title2")}
@@ -258,7 +258,7 @@ const Nav = () => {
                     <div
                       className="text-wrapper text-[16px]"
                       onClick={() => {
-                        OnClickViewOnTop("process");
+                        OnClickViewOnTop("processNav");
                         setisActivem(false);
                       }}
                     >
