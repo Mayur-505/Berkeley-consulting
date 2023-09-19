@@ -1,5 +1,6 @@
 const { GoogleSpreadsheet } = require("google-spreadsheet");
 const secret = require("./secret.json");
+console.log("🚀 ~ file: fetchTranslation.js:3 ~ secret:", secret)
 const fs = require("fs");
 const { JWT } = require("google-auth-library");
 
@@ -12,10 +13,13 @@ const serviceAccountAuth = new JWT({
 })
 //# Initialize the sheet
 const doc = new GoogleSpreadsheet(
-    "1FimvluEFSnIgQFOMD2lE6JhaMS9JVZW8iDj6hXYN3Uo", serviceAccountAuth); //# spreadsheet ID
+    "1FimvluEFSnIgQFOMD2lE6JhaMS9JVZW8iDj6hXYN3Uo"); //# spreadsheet ID
 //# Initialize Auth
 const init = async () => {
-
+    await doc.useServiceAccountAuth({
+        client_email: secret.client_email,
+        private_key: secret.private_key,
+    })
 };
 // const read = async () => {
 //     console.log("🚀 ~ file: fetch Translation.js:19 ~ read ~ read:")
@@ -23,11 +27,13 @@ const init = async () => {
 // };
 const read = async () => {
     await doc.loadInfo(); //# loads document properties and worksheets
-    const sheet = doc.sheetsByTitle.paradive; //# get the sheet by title, I left the default title name. If you changed it, then you should use the name of your sheet
+    const sheet = doc.sheetsByTitle.berkeley; //# get the sheet by title, I left the default title name. If you changed it, then you should use the name of your sheet
     await sheet.loadHeaderRow(); //# loads the header row (first row) of the sheet
     const colTitles = sheet.headerValues; //# array of strings from cell values in the first row
+    console.log("🚀 ~ file: fetchTranslation.js:29 ~ read ~ colTitles:", colTitles)
 
     const rows = await sheet.getRows({ limit: sheet.rowCount }); //# fetch rows from the sheet (limited to row count)
+    console.log("🚀 ~ file: fetchTranslation.js:32 ~ read ~ rows:", rows)
     // console.log("row == ", rows);
     let result = {};
     //# map rows values and create an object with keys as columns titles starting from the second column (languages names) and values as an object with key value pairs, where the key is a key of translation, and value is a translation in a respective language

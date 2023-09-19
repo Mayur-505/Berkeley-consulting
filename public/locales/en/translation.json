@@ -14,14 +14,14 @@
     "whyChoose": {
       "mainTitle": "Why Choosing an",
       "title": "Outsourcer is Hard",
-      "option1": "“I'm not satisfied with the quality for the price quoted.”",
-      "option2": "“The extra costs keep piling up, and the maintenance is a mess.”",
-      "option3": "“I don't know where to start asking for it.”",
-      "option4": "“I can't communicate well with my development outsourcer.”"
+      "option1": "\" I've outsourced development, but my lack of development knowledge makes it difficult to communicate. \"",
+      "option2": "“The extra costs keep piling up, and the support is terrible.”",
+      "option3": "“Where to start and how to ask?”",
+      "option4": "“I'm not satisfied with the quality for the cost of development.”"
     },
     "solution1": {
-      "title": "Technology or process issues",
-      "subTitle": "#1 Solution",
+      "title": "The difficulty of development feedback",
+      "subTitle": "First solution",
       "text1": "Fast, friendly feedback from outsourcers",
       "text2": "Deliver differentiated services that drive 100% customer satisfaction"
     },
@@ -44,13 +44,13 @@
       },
       "card3": {
         "title": "Development",
-        "text": "We work with global development teams across the globe  design/development\n with a global team of developers distributed around the world to provide the\n most optimized optimized development services."
+        "text": "We offer the most optimized development services with a highly skilled global development team."
       },
-      "text1": "Structured, optimized IT development services",
+      "text1": "The most optimized IT development services",
       "text2": "We do business together, not development."
     },
     "developmentCost": {
-      "mainTitle": "Lorem ipsum dolor sit amet,",
+      "mainTitle": "Stop worrying about development costs!",
       "title": "1/2 Development Estimated Cost",
       "subTitle": "Less costly, Raise your development skills",
       "text1": {
@@ -69,7 +69,7 @@
     "save": "Save 50%",
     "team": "Global Team",
     "techStack": {
-      "mainTitle": "Lorem ipsum dolor sit amet",
+      "mainTitle": "With tons of development experience",
       "title": "B.C.'s tech stack",
       "card1": {
         "title1": "10 years of experience",
@@ -111,7 +111,7 @@
         "text2": "Wireframes",
         "text3": "Prototypes",
         "text4": "Business analysis",
-        "text5": "Development estimate reports"
+        "text5": "Project Planning"
       },
       "card2": {
         "title": "Matching",
@@ -141,53 +141,53 @@
     },
     "review1": {
       "userName": "Savannah Nguyen",
-      "role": "CEO Sans Brothers",
-      "text": "I was worried about the high cost of outsourcing development, but I was able to solve it through satisfactory planning and continuous feedback at a reasonable estimate."
+      "role": "Marketing platform",
+      "text": "We were worried about the high cost of outsourcing development, but we were able to solve it through satisfactory planning and continuous feedback at a reasonable quote."
     },
     "review2": {
       "userName": "Eleanor Pena",
-      "role": "CEO Sans Brothers",
-      "text": "Working with Berkeley Consulting's development/design team, it was smooth sailing as we were able to get our ongoing additions and change requests done in a timely manner."
+      "role": "Legal Information Platform",
+      "text": "Given my lack of development knowledge, I was worried that it would be difficult to communicate with the outsourced developer, but the communication was seamless and the launch was flawless."
     },
     "review3": {
       "userName": "Zhafira Azalea",
-      "role": "CEO Sans Brothers",
-      "text": "They shared accurate estimates and schedules, so I felt confident in their maintenance."
+      "role": "Music platforms",
+      "text": "Working with Berkeley Consulting's development/design team, we were able to get through the ongoing additions and change requests in a timely manner."
     },
     "review4": {
       "userName": "Ronald Richards",
       "role": "CEO Sans Brothers",
-      "text": "During the project with VERCON, I was most satisfied with the consultation and feedback on the estimate and development schedule."
+      "text": "Because the design and work plan were calculated in installments, I was able to pick and choose the skills I needed and incorporate them into the service without feeling overwhelmed."
     },
     "review5": {
       "userName": "Rakabuming Suhu",
       "role": "CEO Sans Brothers",
-      "text": "In addition to the global development team, there was a large pool of partners, and we were able to save a lot of money overall because we were working in English from the beginning."
+      "text": "They shared accurate quotes and schedules, so I felt confident in their maintenance."
     },
     "review6": {
       "userName": "Jerome Bell",
       "role": "CEO Sans Brothers",
-      "text": "I was worried that it would be difficult to communicate with the outsourced developer due to my lack of development knowledge, but the communication was seamless and the launch was flawless."
+      "text": "Feedback on development budgets and scope based on the size of the organization made it easy to work through the development from start to finish."
     },
     "review7": {
       "userName": "Jammy Jems",
       "role": "CEO Sans Brothers",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      "text": "Throughout the project with Vulcan, I was most pleased with the consultation and feedback on estimates and development timelines."
     },
     "review8": {
       "userName": "Richard fackles",
       "role": "CEO Sans Brothers",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      "text": "We were able to get a professional service at a much more reasonable cost than other companies quoted."
     },
     "review9": {
       "userName": "Katherine fernadence",
       "role": "CEO Sans Brothers",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      "text": "We had a global development team, a large pool of partners, and because we were building in English from the ground up, we were able to save a lot of money overall."
     },
     "review10": {
       "userName": "Garry Lu",
       "role": "CEO Sans Brothers",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      "text": "It was quite a process from quotation consultation to contract, but I could tell that the company had a good understanding of the IT industry and services and managed the process systematically."
     },
     "portfolio": {
       "title": "Our Portfolio"
@@ -197,12 +197,12 @@
       "text": "Happy Clients"
     },
     "projects": {
-      "count": "540+",
+      "count": "54+",
       "text": "Projects Completed"
     },
     "members": {
-      "count": "20",
-      "text": "Dedicated Members"
+      "count": "200K ",
+      "text": "Users Served"
     },
     "faq": {
       "mainTitle": "Have any questions? Get in Touch",
@@ -246,7 +246,7 @@
     "service": {
       "title": "Services",
       "text1": "Integration",
-      "text2": "Customers",
+      "text2": "Partners",
       "text3": "Pricing",
       "text4": "Help Center"
     },
