@@ -13,6 +13,7 @@ import LanguageContext from '@/context/language';
 import i18ns from "../i18n"
 import { useEffect, useState } from 'react';
 import useLocalStorage from '@/hooks/useLocalStorage';
+import axios from 'axios';
 
 // import { useEffect } from 'react'
 
@@ -23,13 +24,32 @@ import useLocalStorage from '@/hooks/useLocalStorage';
 function MyApp({ Component, pageProps }: AppProps) {
   const { i18n } = useTranslation()
   const [language, setLanguage] = useState("ko")
-  const [value] = useLocalStorage("translation", "", false)
+  // const [value] = useLocalStorage("translation", "", false)
+  const [value, setValue] = useState<any>("")
   const [lang, setLang] = useLocalStorage("language", "", true)
 
+
   useEffect(() => {
-    const translation = JSON.parse(localStorage.getItem("translation"))
-    i18n.changeLanguage(language || "ko")
-  }, [])
+    const url = 'https://berkeleyconsulting.s3.us-east-005.backblazeb2.com/berkeley/translation.json';
+
+    axios.get(url)
+      .then((response) => {
+        setValue(response.data);
+      })
+      .catch((error) => {
+        console.error('An error occurred:', error);
+      });
+  }, []);
+
+  useEffect(() => {
+    // const translation = JSON.parse(localStorage.getItem("translation"))
+    i18n.changeLanguage(localStorage.getItem("l") || "ko")
+  }, [value])
+
+  // useEffect(() => {
+  //   const translation = JSON.parse(localStorage.getItem("translation"))
+  //   i18n.changeLanguage(language || "ko")
+  // }, [])
   useEffect(() => {
     if (lang !== "") {
       setLanguage(lang)
@@ -55,7 +75,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           escapeValue: false,
         },
       });
-  }, [value?.en, value?.ko])
+    i18n.changeLanguage(localStorage.getItem("language") || "en")
+  }, [value])
 
   return (
     <I18nextProvider i18n={i18ns}>
