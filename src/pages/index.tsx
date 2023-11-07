@@ -1,6 +1,6 @@
 "use client"
 import type { NextPage } from "next";
-import { useCallback, useContext, useReducer, useRef, useState } from "react";
+import { useCallback, useContext, useEffect, useReducer, useRef, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
@@ -94,22 +94,32 @@ function FAQComponent(props: any) {
 
   const translatedText5 = t("landingPage.faq5.answer");
   const [firstPart5, secondPart5, ...remainingParts5] = translatedText5.split(".");
+  const [partmain, setPartmain] = useState("");
+  const [partmain2, setPartmain2] = useState("");
 
-  var partmain;
-  {
+  // var partmain;
+
+
+  useEffect(() => {
     remainingParts.map((part, index) => (
-      partmain = part.trim()
+      // partmain = part.trim()
+      setPartmain(part.trim())
     ))
-  }
-  const part = lang === 'ko' && partmain.split("여기");
-  const boldPart = part.length > 1 ? <span>여기</span> : "여기";
-
-  var partmain2;
-  {
     remainingParts2.map((part, index) => (
-      partmain2 = part.trim()
+      // partmain2 = part.trim()
+      setPartmain2(part.trim())
     ))
-  }
+  }, [])
+
+  const part: any = lang === 'ko' && partmain.split("여기");
+  const boldPart = part?.length > 1 ? <span>여기</span> : "여기";
+
+  // var partmain2;
+  // {
+  //   remainingParts2.map((part, index) => (
+  //     partmain2 = part.trim()
+  //   ))
+  // }
   const part2 = lang === 'ko' && partmain2.split("여기");
 
   const part3 = lang === 'ko' && firstPart3.split("여기");
